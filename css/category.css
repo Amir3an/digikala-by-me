@@ -1,0 +1,1517 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "iransans";
+}
+a{
+  text-decoration: none; 
+  color: inherit; 
+}
+li{
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-color: white;
+    overflow-x: hidden;
+}
+a:hover{
+    color: inherit;
+}
+
+
+                        /* start header */
+
+
+
+div#header-container{
+    background-color: rgba(255, 0, 0, 0);
+    position: fixed;
+    z-index: 8;
+    height: 1px;
+    width: 100%;
+    top: 0;
+    padding: 0;
+}
+div#header-container div.header-top-row{
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding: 0 12px;
+    z-index: 10;
+    box-shadow: 0 2px 5px 1px rgba(51, 51, 51, 0.262);
+}               
+div#header-container div.row>div{
+    background-color: rgb(255, 255, 255);
+}
+
+
+                /*start header logo */
+
+
+div#header-container div.header-top-row>div{
+    padding: 10px;
+    padding-bottom: 0;
+    z-index: 10;
+}
+div#header-container div.header-top-row>div.header-logo{
+    text-align: right;
+}
+div#header-container div.header-top-row>div.header-logo img{
+   margin-top: 8px;
+   max-width: 150px;
+}
+
+
+                /*start header searchbox */
+
+
+div#header-container div.header-top-row div.header-search-box input{
+    border: none;
+    outline: none;
+    background-color: rgb(234, 234, 234);
+    height: 40px;
+    margin-top: 3px;
+    font-size: 14px;
+}
+div#header-container div.header-top-row div.header-search-box input:focus{
+    box-shadow: none;
+}
+div#header-container div.header-top-row div.header-search-box button{
+    outline: none;
+    border: none !important;
+    box-shadow: none;
+    opacity: 1;
+    height: 40px;
+    margin-top: 3px;
+    transition: opacity;
+    transition-duration: .2s;
+}
+div#header-container div.header-top-row div.header-search-box button:hover{
+    opacity: .9;
+}
+div#header-container div.header-top-row div.header-search-box i{
+    color: white;
+}
+
+                /*finish header searchbox */
+
+
+                /*start header left buttons */
+
+
+div#header-container div.header-top-row div.header-left-buttons{
+    text-align: left;
+    position: relative;
+}
+div#header-container div.header-top-row div.header-left-buttons>div{
+    display: inline-block;
+}
+div#header-container div.header-top-row div.header-left-buttons div button{
+    font-size: 14px;
+    font-family: "iransans";
+    font-weight: 500;
+    color: #222;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 15px;
+    background-color: white;
+    border: 1px solid #222;
+    transition: background-color .2s;
+}
+div#header-container div.header-top-row div.header-left-buttons div.header-sign-buttons{
+    margin-left: 30px;
+}
+div#header-container div.header-top-row div.header-left-buttons div.header-sign-buttons::after{
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 35px;
+    background-color: rgba(34, 34, 34, 0.508);
+    position: absolute;
+    margin-right: 15px;
+    top: 15px;
+    border-radius: 5px;
+
+}
+div#header-container div.header-top-row div.header-left-buttons div button:hover{
+    background-color: whitesmoke;
+}
+div#header-container div.header-top-row div.header-left-buttons>div button i{
+    vertical-align: middle;
+}
+div#header-container div.header-top-row div.header-left-buttons div.header-sign-buttons button i{
+    margin-left: 8px;
+}
+
+                        /*finish header left buttons */
+
+
+                        /*start header bottom row*/
+
+
+div#header-container div.header-bottom-row{
+    background-color: rgb(255, 255, 255);
+    text-align: right;
+    display: flex;
+    height: 42px;
+    overflow: hidden;
+    z-index: 9;
+    position: relative;
+    margin-right: -9px;
+    bottom: 0;
+    padding: 0 12px;
+    transition: bottom .5s;
+    box-shadow: 0 2px 5px 1px rgba(51, 51, 51, 0.262);
+}
+div#header-container div.hide-bottom-row{
+    transition: bottom .5s;
+    bottom: 50px;
+}
+div#header-container div.header-bottom-row>div{
+    background-color: white;
+    font-weight: 500;
+    text-align: right !important;
+    flex-flow: row;
+    padding: 10px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+    padding-left: 35px;
+    transition: background-color .3s;
+    transition: border-bottom .3s;
+}
+div#header-container div.header-bottom-row>div>a{
+    padding: 0;
+    margin: 0;
+    padding: 10px;
+    padding-left: 35px;
+}
+div#header-container div.header-bottom-row>div:hover{
+    border-bottom: 2px solid #f9152c;
+    cursor: pointer;
+}
+div#header-container div.header-bottom-row>div h3{
+    font-size: 14px;
+    margin: 0;
+}
+div#header-container div.header-bottom-row>div h3>i{
+    vertical-align: middle;
+    font-size: 20px;
+    margin-left: 3px;
+}
+div#header-container div.header-bottom-row div.header-user-location{
+    text-align: left;
+    font-size: 13px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    padding: 10px;
+}
+div#header-container div.header-bottom-row div.header-user-location:hover{
+    cursor: pointer;
+}
+div#header-container div.header-bottom-row div.header-user-location>p{
+    margin: 0;
+}
+div#header-container div.header-bottom-row div.header-user-location>p>i{
+    vertical-align: middle;
+    color: red;
+}
+div#header-container div#header-sliding-menu{
+    position: absolute;
+    width: 35px;
+    text-align: center;
+    padding: 9px 0;
+    height: 35px;
+    border-radius: 5px;
+    color: whitesmoke;
+    z-index: 11;
+    cursor: pointer;
+    top: 15px;
+    display: none;
+}
+div#header-container div#header-sliding-menu>i{
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+
+
+                    /*finish header bottom row*/
+
+
+                    /* finish header */
+
+
+                    /* start sliding menu */
+
+
+div#sliding-menu{
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    background-color: white;
+    right: -100%;
+    display: none;
+    z-index: 10;
+    transition: right .5s;
+    transition-timing-function: ease-out;
+}
+div#sliding-menu>div.sliding-menu-logo{
+    position: relative;
+    text-align: center;
+    padding: 17px 0;
+    margin-bottom: 50px;
+}
+div#sliding-menu>div.sliding-menu-logo>div.close-sliding-menu{
+    position: absolute;
+    left: -40px;
+    padding: 20px 10px;
+    height: 90px;
+    top: 0;
+    border-radius: 0px 0 0 45px;
+    background-color: white;
+    text-align: center;
+    color: #222;
+    cursor: pointer;
+}
+div#sliding-menu>div.sliding-menu-logo>div.close-sliding-menu>i{
+    margin-left: 10px;
+}
+
+
+
+                    /* start sliding menu main */
+
+
+                    
+
+div#sliding-menu div.sliding-menu-main{
+    position: relative;
+    color: rgb(204, 204, 204);
+    overflow-x: hidden;
+}
+div#sliding-menu div.sliding-menu-main div.accordion-flush{
+    overflow-y: scroll;
+    height: 70vh;
+    position: relative;
+    left: -17px;
+}
+div#sliding-menu div.sliding-menu-main div.accordion-item h2 button{
+    font-family: "iransans";
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 0;
+    color: #444;
+    padding: 10px 0;
+}
+div#sliding-menu div.sliding-menu-main div.accordion-item h2 button>i{
+    position: absolute;
+    left: 25px;
+    vertical-align: middle;
+}
+div#sliding-menu div.sliding-menu-main div.accordion-item h2 button:focus{
+    box-shadow: none;
+}
+div#sliding-menu div.sliding-menu-main div.accordion-item div.accordion-body ul.group1{
+    padding: 5px 20px;
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 0;
+    background-color: rgb(255, 255, 255);
+    color: #222;
+}
+div#sliding-menu div.sliding-menu-main div.accordion-item div.accordion-body ul.group1>li>a>h3{
+    font-family: "iransans";
+    font-size: 14px;
+    font-weight: 600;
+}
+div#sliding-menu div.sliding-menu-main div.accordion-item div.accordion-body ul.group2{
+    padding: 15px 20px;
+    padding-top: 0;
+    padding-left: 0;
+    list-style: none;
+    width: 100%;
+
+}
+div#sliding-menu div.sliding-menu-main div.accordion-item div.accordion-body ul.group2>a>li{
+    padding: 5px 0;
+}
+div#sliding-menu div.sliding-menu-main div.accordion-item div.accordion-body ul.group2>a>li::before{
+    content: "";
+    border: 2px solid #f9152c;
+    font-size: 10px;
+    width: 1px ;
+    margin-left: 5px;
+    border-radius: 20%;
+    vertical-align: middle;
+}
+div#sliding-menu div.sliding-menu-main div.accordion-item div.accordion-body ul.group2>a>li>h3{
+    font-family: "iransans";
+    font-size: 13px;
+    font-weight: 100;
+}
+div#sliding-menu p{
+    margin: 0;
+}
+div#sliding-menu div.sliding-menu-sign{
+    position: relative;
+    bottom: 20px;
+    font-weight: 500;
+    color: #444;
+    font-size: 14px;
+    background-color: rgb(155, 225, 255);
+    text-align: right;
+}
+div#sliding-menu div.sliding-menu-cart{
+    position: relative;
+    bottom: 20px;
+    font-weight: 500;
+    color: #444;
+    font-size: 14px;
+    background-color: rgb(111, 188, 200);
+    text-align: right;
+}
+div#sliding-menu div.sliding-menu-sign a ,
+div#sliding-menu div.sliding-menu-cart a{
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+}
+div#sliding-menu div.sliding-menu-cart i ,
+div#sliding-menu div.sliding-menu-sign i{
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+                            /* finish sliding menu main */
+
+
+                            /* finish sliding menu */
+
+
+                            /* start black background */
+
+div#black-background{
+    opacity: 0;
+    visibility: hidden;
+    width: 100%;
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    height: 100%;
+    background-color: rgba(59, 59, 59, 0.693);
+}
+div.black-background-duration{
+    opacity: 1 !important;
+    visibility: visible !important;
+    transition: opacity .5s ease .3s , 
+                visibility .3s linear .3s
+                ;
+}
+
+
+
+                            /* finish black background */
+
+
+                            /* start header main product menu */
+
+
+
+div#main-products-menu{
+    background-color: white;
+    visibility: hidden;
+    position: relative;
+    left: 20px;
+    z-index: 7;
+    opacity: 0;
+    border-top: 1px solid rgba(225, 225, 225, 0.593);
+}
+div.main-products-menu-fade{
+    left: 0 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transition: opacity .5s ease .3s , 
+                visibility .3s linear .3s,
+                left .3s linear .3s
+                ;
+}
+div#main-products-menu>nav>ul{
+    position: relative;
+    width: 100%;
+    box-sizing: content-box;
+    padding-left: 0;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+div#main-products-menu>nav>ul>li{
+    background-color: whitesmoke;
+    padding: 15px 20px;
+    text-align: right;
+    width: 13%;
+}
+div#main-products-menu>nav>ul>li:hover{
+    background-color: rgb(223, 223, 223);
+    cursor: pointer;
+}
+div#main-products-menu h3{
+    font-family: "iransans";
+    font-size: 13px;
+    font-weight: 600;
+    color: #444;
+}
+
+div#main-products-menu>nav>ul>li>ul{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    padding-top: 10px;
+    right: 13%;
+    padding-left: 300px;
+    border-right: 1px solid rgba(225, 225, 225, 0.593);
+    width: 87%;
+    text-align: right;
+    padding-right: 0;
+    cursor:default;
+}
+div#main-products-menu>nav>ul>li>ul{
+    display: none;
+}
+div#main-products-menu>nav>ul>li:hover>ul{
+    display: block;
+}
+div#main-products-menu>nav>ul>li>ul>div{
+    overflow: hidden;
+}
+div#main-products-menu>nav>ul>li>ul li{
+    text-align: right;
+}
+div#main-products-menu>nav>ul>li>ul li a{
+    width: 100%;
+    display: block;
+    font-size: 14px;
+    font-weight: 500px;
+    padding: 3px 10px;
+}
+div#main-products-menu>nav>ul>li>ul li a:hover{
+    color: #f9152c;
+}
+div#main-products-menu>nav>ul>li>ul li a::before{
+    content: "";
+    border: 1px solid #f9152c;
+    font-size: 10px;
+    width: 2px ;
+    margin-left: 5px;
+    border-radius: 20%;
+    vertical-align: middle;
+}
+div#main-products-menu>nav>ul>li>ul li h3{
+    padding: 10px 0;
+}
+div#main-products-menu>nav>ul>li>ul>div>li>a{
+    padding-right: 0;
+    color: #f9152c;
+    font-weight: 500;
+}
+div#main-products-menu>nav>ul>li>ul>div>li>a:hover{
+    text-decoration: underline;
+}
+div#main-products-menu>nav>ul>li>ul img{
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+                            /* finish header main product menu */
+
+
+                            /* start main */
+
+
+
+                            /* start main top carousel */
+
+
+div#main-container div.main-top-carousel{
+    z-index: 6;
+}
+div#main-container div#carouselExampleIndicators>button{
+    width: 7%;
+}
+div#main-container div#carouselExampleIndicators>button:hover{
+    background-color: rgba(255, 255, 255, 0.153);
+}
+div#main-container div#carouselExampleIndicators>div>button{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+                            /* finish main top carousel */
+
+                            /* start main services */
+
+
+
+div#main-container div.main-services>div.container>div.row{
+    padding: 0 30px;
+    margin: 10px 0;
+}
+div#main-container div.main-services>div.container>div.row>div.col{
+    text-align: center;
+}
+div#main-container div.main-services>div.container>div.row>div.col>a{
+    display: inline-block;
+    padding: 20px;
+}
+div#main-container div.main-services>div.container>div.row>div.col>a>img{
+    width: 56px;
+    height: 56px;
+}
+div#main-container div.main-services>div.container>div.row>div.col>a>label{
+    display: block;
+    font-family: "iransans";
+    font-size: 14px;
+    font-weight: 500;
+    color: #444;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+                        /* finish main services */
+
+                        /* start main amazing slider */
+
+div#main-container div.main-carousel{
+    margin-top: 10px;
+    background-color:#5D52C0;
+    padding: 20px 5px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+div#main-container div.main-carousel div.owl-carousel{
+    border-radius:0 10px 10px 0 ;
+    overflow: hidden;
+}
+div#main-container div.main-carousel div.owl-carousel div.item{
+    background-color: rgb(255, 255, 255);
+    padding: 5px 0;
+    border-left: 2px solid #5D52C0;
+}
+div#main-container div.main-carousel div.owl-carousel div div.first-item{
+    border-radius: 0 10px 10px 0;
+    
+}
+div#main-container div.main-carousel div.owl-carousel .owl-dots{
+    display: none;
+}
+div#main-container div.main-carousel div.owl-carousel img{
+    width: 150px;
+    margin: 0 auto;
+}
+div#main-container div.main-carousel div.owl-carousel label{
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+}
+div#main-container div.main-carousel div.owl-carousel label p{
+    width: auto;
+    position: relative;
+    padding: 3px 12px;
+    margin: 0;
+    cursor: pointer;
+}
+div#main-container div.main-carousel div.owl-carousel label p.product-name{
+    direction: rtl;
+    text-align: center;
+    padding: 15px 12px;
+    min-height: 70px;
+}
+div#main-container div.main-carousel div.owl-carousel label p.price{
+    text-align: left;
+    font-size: 15px;
+}
+div#main-container div.main-carousel div.owl-carousel label p.price>span:last-child{
+    font-size: 12px;
+    padding-right: 5px;
+}
+div#main-container div.main-carousel div.owl-carousel label span.discount{
+    position: absolute;
+    right: 5px;
+    display: inline-block;
+    background-color: #dc3545;
+    border-radius: 30px;
+    font-size: 12px;
+    color: whitesmoke;
+    padding: 2px 8px;
+}
+div#main-container div.main-carousel div.owl-carousel label p.price-before-discount{
+    text-decoration: line-through;
+    text-align: left;
+    font-size: 15px;
+    padding-left: 30px;
+    color: #555;
+}
+div#main-container div.main-carousel div.row>div.col-2{
+    padding-left: 0 !important;
+    position: relative;
+}
+div#main-container div.main-carousel div.amazing-slider-intro{
+    background-color:#5D52C0 !important;
+    margin: 0;
+    padding-top: 10px;
+    border: none !important;
+}
+div#main-container div.main-carousel div.amazing-slider-intro label a{
+    font-size: 13px;
+    color: white;
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+}
+div#main-container div.main-carousel div.owl-carousel div div.last-item{
+    position: relative;
+    border-radius: 10px 0 0 10px;
+}
+div#main-container div.main-carousel div.owl-carousel div div.last-item>a{
+    display: block;
+    height: 20%;
+    padding: 0 20px;
+    position: absolute;
+    width: 100%;
+    padding-top: 5%;
+    text-align: center;
+    top: 40%;
+}
+div#main-container div.main-carousel div.owl-carousel div div.last-item>a i{
+    vertical-align: middle;
+    color: #43bfff;
+    margin-right: 10%;
+}
+div#main-container div.main-carousel div.owl-carousel{
+    position: relative;
+}
+.owl-theme .owl-nav {
+    background-color: yellow !important;
+    position: absolute !important;
+    width: 100%;
+    top: 35%;
+}
+.owl-carousel .owl-nav button{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 100% !important;
+    background-color: whitesmoke !important;
+    opacity: 1;
+}
+.owl-carousel .owl-nav button:hover{
+    opacity: .5;
+    transition: opacity .3s;
+}
+.owl-carousel .owl-nav button.owl-prev{
+    right: 0;
+    box-shadow: -3px 0 10px 1px rgba(148, 148, 148, 0.566);
+}
+.owl-carousel .owl-nav button.owl-next{
+    left: 0;
+    box-shadow: 3px 0 10px 1px rgba(148, 148, 148, 0.566);
+}
+.owl-carousel .owl-nav button span{
+    color: #5D52C0 !important;
+    font-size: 30px;
+}
+.owl-theme .owl-nav .disabled{
+    display: none;
+}
+                            /* finish main amazing slider */
+
+
+                            /* start main 4in1ads */
+
+
+div#main-container div.main-4in1ads{
+    margin: 30px auto;
+}
+div#main-container div.main-4in1ads div.row div.col{
+    text-align: center;
+}
+div#main-container div.main-4in1ads div.row div.col>a{
+    background-color: yellow;
+    display: block;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 5px 1px rgba(148, 148, 148, 0.31);
+
+}
+div#main-container div.main-4in1ads div.row div.col>a img{
+    width: 100%;
+}
+
+
+                    /* finish main 4in1ads */
+
+
+                    /* start main brands carousel */
+
+
+div#main-container div.main-brands-slider{
+    padding: 0 !important;
+    box-shadow: 0 0 5px 1px rgba(148, 148, 148, 0.31);
+}
+div#main-container div.main-brands-slider div.owl-carousel img{
+    width: 110px;
+}
+div#main-container div.main-brands-slider{
+    margin-top: 10px;
+    background-color:#ffffff;
+    padding: 20px 5px;
+    padding-bottom: 40px !important;
+    border-radius: 15px;
+    overflow: hidden;
+}
+div#main-container div.main-brands-slider div.owl-carousel div.item{
+    border-left: 1px solid #dfdfdf;
+}
+div#main-container div.main-brands-slider .owl-theme .owl-nav {
+    top: 20%;
+}
+div#main-container div.main-carousel div.main-carousel-title{
+    text-align: center;
+
+}
+div#main-container div.main-carousel div.main-carousel-title h3{
+    font-size: 18px;
+    font-weight:500 ;
+    padding-top: 10px;
+    color: #333;
+}
+
+
+                                /* finish main brands carousel */
+
+
+                                /* start main 2in1ads */
+
+
+div#main-container div.main-2in1ads{
+    margin: 20px auto;
+}
+div#main-container div.main-2in1ads div.row div.col-sm{
+    text-align: center;
+}
+div#main-container div.main-2in1ads div.row div.col-sm>a{
+    background-color: yellow;
+    display: block;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 5px 1px rgba(148, 148, 148, 0.31);
+
+}
+div#main-container div.main-2in1ads div.row div.col-sm>a img{
+    width: 100%;
+}
+                            
+                            
+                                /* finish main 2in1ads */
+
+                                /* start products carousel */
+
+
+div#main-container div.products-carousel{
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 20px auto;
+    box-shadow: 0 0 5px 1px rgba(148, 148, 148, 0.31);
+
+}
+div#main-container div.products-carousel>div.row{
+    text-align: center;
+    overflow: hidden;
+} 
+div#main-container div.products-carousel>div.row>div.col-12{
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 0 1px 1px rgba(148, 148, 148, 0.31);
+    border-bottom: none;
+    border-top: none;
+    padding: 0 !important;
+}  
+div#main-container div.products-carousel>div.row>div.col-12 div.row{
+    text-align: center !important;
+    background-color: white;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: hidden;
+}
+div#main-container div.products-carousel>div.row>div.col-12 div.row h3{
+    font-size: 16px !important;
+    font-weight: 500;
+    color: #444;
+}   
+div#main-container div.products-carousel>div.row>div.col-12 div.row>div{
+    padding: 10px;
+}    
+div#main-container div.products-carousel>div.row>div.col-12 div.row>div.label{
+    background-color: white;
+    z-index: 2;
+    padding: 20px 10px;
+    padding-bottom: 0;
+    text-align: right;
+}  
+div#main-container div.products-carousel>div.row>div.col-12 div.row>div.note1{
+    background-color: white;
+    z-index: 2;
+    padding: 0px 10px;
+    text-align: right;
+    font-size: 13px; 
+    color: #555;
+}    
+div#main-container div.products-carousel>div.row>div.col-12 div.row>div.col-6{
+    box-shadow: 0 1px .1px .4px rgba(148, 148, 148, 0.17);
+    z-index: 1;
+    padding: 13px;
+}          
+div#main-container div.products-carousel>div.row>div.col-12 div.row div.see-all{
+    text-align: right;
+    opacity: 1;
+    transition: opacity .3s;
+    background-color: white;
+    z-index: 2;
+    padding: 10px;
+    text-align: right;
+
+}
+div#main-container div.products-carousel>div.row>div.col-12 div.row div.see-all:hover{
+    opacity: .8;
+    transition: opacity .3s;
+}
+div#main-container div.products-carousel>div.row>div.col-12 div.row div.see-all>a{
+    display: inline-block;
+    width: 100%;
+    font-weight: 500;
+    font-size: 14px;
+    color: #1474a4;
+}
+
+
+                                /* finish products carousel */
+
+                                /* start most-sells */
+
+
+div#main-container div.most-sells{
+    background-color: white;
+    border-radius: 15px;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+    padding: 0 30px;
+    box-shadow: 0 0 5px 1px rgba(148, 148, 148, 0.31);
+}
+div#main-container div.most-sells>div.row{
+    text-align: center;
+}
+div#main-container div.most-sells>div.most-sells-intro{
+    padding: 20px;
+    z-index: 2;
+}
+div#main-container div.most-sells>div>a{
+    display: inline-block;
+    width: fit-content;
+    position: absolute;
+    left: 10px;
+    font-size: 13px; 
+    color: #1474a4;
+
+
+}
+div#main-container div.most-sells>div>h3{
+    display: inline-block;
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 18px !important;
+    font-weight: 500;
+    color: #444;
+
+}
+div#main-container div.most-sells>div.most-sells-main{
+    overflow: hidden;
+    padding:0px;
+    padding-bottom: 0;
+}
+div#main-container div.most-sells>div.most-sells-main>div.container>div.row>div{
+    box-shadow: 0 1px .1px .4px rgba(148, 148, 148, 0.17);
+    overflow: hidden;
+    padding: 0;
+}
+div#main-container div.most-sells>div.most-sells-main>div.container>div.row>div>a{
+    display: block;
+    overflow: hidden;
+    padding: 10px;
+    text-align: right;
+    box-shadow: 0 1px .1px .4px rgba(148, 148, 148, 0.17);
+}
+div#main-container div.most-sells>div.most-sells-main>div.container>div.row>div>a>div>div>div{
+    text-align: right;
+    padding: 5px;
+}
+div#main-container div.most-sells>div.most-sells-main>div.container>div.row>div>a>div>div>div>p{
+    font-size: 13px;
+    color: #444;
+    padding: 0 5px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+
+}
+div#main-container div.most-sells>div.most-sells-main>div.container>div.row>div>a>div>div>div>p>span{
+    margin: 5px;
+    text-align: right;
+    display: inline-block;
+}
+div#main-container div.most-sells>div.most-sells-main>div.container>div.row>div>a>div>div>div>p>span.most-sells-name{
+    width: 70%;
+    padding-top: 10px;
+}
+div#main-container div.most-sells>div.most-sells-main>div.container>div.row>div>a>div>div>div>p>span.most-sells-count{
+    font-size: 30px;
+    color: #19BFD3;
+    font-weight: 900;
+    vertical-align: top;
+}
+
+
+                            /* finish most-sells */
+
+                            /* start best-discount */
+
+
+div#main-container div.best-discount{
+    background-color: white;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 15px;
+    margin: 20px auto;
+    box-shadow: 0 0 5px 1px rgba(148, 148, 148, 0.31);
+}
+div#main-container div.best-discount>div.row{
+    z-index: 1;
+}
+
+div#main-container div.best-discount>div.best-discount-label{
+    padding: 20px;
+}
+div#main-container div.best-discount>div.best-discount-label>div>h3{
+    font-size: 18px !important;
+    font-weight: 500;
+    color: #444;
+
+}
+div#main-container div.best-discount>div.row>div{
+    padding: 0;
+    box-shadow: 0 1px .1px .4px rgba(148, 148, 148, 0.17);
+}
+div#main-container div.best-discount>div.best-discount-label>div{
+    box-shadow: none !important;
+}
+div#main-container div.best-discount>div.row>div label{
+    width: 100%;
+    padding: 10px 0;
+    cursor: pointer;
+
+}
+div#main-container div.best-discount>div.row>div img{
+    padding: 20px 45px;
+}
+div#main-container div.best-discount>div.row>div label p{
+    margin: 0;
+    position: relative;
+    text-align: left;
+    padding: 5px 10px;
+}
+div#main-container div.best-discount>div.row>div label p.price span.discount{
+    position: absolute;
+    right: 10px;
+    background-color: #f9152c;
+    color: white;
+    font-size: 13px;
+    padding: 1px 5px;
+    border-radius: 10px;
+    text-align: center;
+    overflow: visible;
+}
+div#main-container div.best-discount>div.row>div label p.price-before-discount span{
+    text-decoration: line-through;
+    color: #555;
+}
+div#main-container div.best-discount>div.row>div label p.price-before-discount span:nth-child(2){
+    color: white;
+}
+
+                            /* finish best-discount */
+
+
+                            /* start main category */
+
+            
+            
+div#main-container div.main-category{
+    background-color: white;
+    margin: 20px auto;
+    border-radius: 15px;
+    overflow: hidden;
+}
+div#main-container div.main-category>div:nth-child(1){
+    /* background-color: rgb(255, 0, 0); */
+    padding: 20px;
+    text-align: center;
+}
+div#main-container div.main-category>div:nth-child(1) h3{
+    font-size: 18px !important;
+    font-weight: 500;
+    color: #444;
+
+}
+div#main-container div.main-category>div:nth-child(2)>div{
+    /* background-color: greenyellow; */
+    text-align: center;
+    margin: 10px;
+    /* width: fit-content; */
+    /* display: inline-block; */
+    
+}
+div#main-container div.main-category>div:nth-child(2)>div img{
+    width: 170px;
+}
+div#main-container div.main-category>div:nth-child(2)>div label{
+    /* width: 100%; */
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 20px 0;
+    color: #555;
+
+}
+
+
+                            /* finish main category */
+
+
+                            /* finish main */
+
+                            /* start footer */
+
+
+footer div#footer-container{
+    background-color: white;
+    border-top: 1px solid rgba(148, 148, 148, 0.31);
+}
+
+
+                            /* start footer intro */
+
+
+footer div#footer-container div.footer-intro{
+    background-color: white;
+    position: relative;
+}
+footer div#footer-container div.footer-intro>div:nth-child(1){
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+footer div#footer-container div.footer-intro>div:nth-child(1)>button{
+    font-size: 13px;
+    box-shadow: 0 0 .1px .4px rgba(148, 148, 148, 0.17);
+}
+footer div#footer-container div.footer-intro>div:nth-child(1)>button i{
+    vertical-align: middle;
+}
+footer div#footer-container div.footer-intro>div:nth-child(2){
+    padding: 20px 0;
+    text-align: right;
+}
+footer div#footer-container div.footer-intro>div.row:nth-child(3)>div>div{
+    display: inline-block;
+    position: relative;
+    margin-left: 20px;
+    font-size: 13px;
+}
+footer div#footer-container div.footer-intro>div.row:nth-child(3)>div>div.support-num::after{
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 20px;
+    background-color: rgba(34, 34, 34, 0.508);
+    position: absolute;
+    margin-right: 15px;
+    top: 0px;
+    left: -12px;
+    border-radius: 5px;
+
+}
+footer div#footer-container div.footer-intro>div.row:nth-child(3)>div>div.support-about{
+    margin-left: 0;
+}
+
+
+                                /* finish footer intro */
+
+                                /* start footer services */
+
+
+div#footer-container div.footer-services{
+    background-color: white;
+}
+div#footer-container div.footer-services>div.container-fluid>div.row{
+    padding: 0 30px;
+}
+div#footer-container div.footer-services>div.container-fluid>div.row>div.col{
+    text-align: center;
+}
+div#footer-container div.footer-services>div.container-fluid>div.row>div.col>a{
+    display: inline-block;
+    padding: 20px;
+}
+div#footer-container div.footer-services>div.container-fluid>div.row>div.col>a>img{
+    width: 56px;
+    height: 56px;
+}
+div#footer-container div.footer-services>div.container-fluid>div.row>div.col>a>label{
+    display: block;
+    font-family: "iransans";
+    font-size: 13px;
+    font-weight: 500;
+    color: #444;
+    margin-top: 10px;
+    cursor: pointer;
+}
+                                
+
+
+                                    /* finish footer services */
+
+
+                                    /* start other pages */
+
+
+div#footer-container div.other-pages{
+    background-color: white;
+    padding: 30px 10px;
+}
+div#footer-container div.other-pages>div>div{
+    padding:0px 20px;
+    padding-left:0 ;
+    margin-bottom: 20px;
+}
+div#footer-container div.other-pages>div>div h3{
+    font-size: 16px !important;
+    font-weight: 500;
+    color: #444;
+}
+div#footer-container div.other-pages>div>div:not(div.footer-contact)>ul>li>a{
+    padding: 5px;
+    display: block;
+    color: #333;
+    width: 100%;
+    font-size: 15px
+}
+div#footer-container div.other-pages>div>div.footer-contact>div:nth-child(2){
+    padding: 20px 0;
+}
+div#footer-container div.other-pages>div>div.footer-contact>div:nth-child(2)>div{
+    text-align: center;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+div#footer-container div.other-pages>div>div.footer-contact>div:nth-child(3){
+    font-size: 15px;
+}
+div#footer-container div.other-pages>div>div.footer-contact>div:nth-child(4){
+    padding: 10px;
+}
+div#footer-container div.other-pages>div>div.footer-contact>div:nth-child(4) button{
+    width: fit-content;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color:#dc3545;
+    text-align:center;
+    padding: 5px 10px;
+    color: white;
+    font-size: 14px;
+    margin: 10px 0;
+}
+div#footer-container div.other-pages>div>div.footer-contact>div:nth-child(4) input{
+    width: 200px;
+    outline: none;
+    border: none;
+    margin-left: 10px;
+    border-radius: 5px;
+    background-color: rgb(228, 228, 228);
+    text-align: left;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+
+                                /* finish other pages */
+
+                                /* start app download */
+
+
+
+
+div#footer-container div.app-download{
+    background-color: #3C4B6D;
+    margin: 0 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+div#footer-container div.app-download>div{
+    padding: 10px;
+}
+div#footer-container div.app-download>div>div>div:nth-child(1)>h2{
+    display: inline;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+    color: whitesmoke;
+}
+div#footer-container div.app-download>div>div>div:nth-child(1)>img{
+    margin-left: 10px;
+    vertical-align: middle;
+}
+div#footer-container div.app-download>div>div>div:nth-child(2){
+    text-align: left;
+}
+div#footer-container div.app-download>div>div>div:nth-child(2) div{
+    text-align: left;
+}
+div#footer-container div.app-download>div>div>div:nth-child(2)>div>div>div{
+    vertical-align: middle;
+    width: min-content;
+}
+div#footer-container div.app-download>div>div>div:nth-child(2)>div>div>div>a{
+    display: inline-block;
+}
+div#footer-container div.app-download>div>div>div:nth-child(2)>div>div>div>a>img{
+    border-radius: 10px;
+}
+div#footer-container div.app-download>div>div>div:nth-child(2)>div>div>hr{
+    margin-top: 10px;
+    color: white;
+}
+div#footer-container div.app-download>div>div>div:nth-child(2)>div>div>div:last-child{
+    margin-bottom: 10px;
+}
+div#footer-container div.app-download>div>div>div:nth-child(2)>div>div>div:last-child a{
+    color: whitesmoke;
+}
+
+
+                                /* finish app download */
+
+                                /* start footer about */
+
+
+div#footer-container div.footer-about{
+    margin-top: 20px;
+    border-top: 1px solid rgb(212, 212, 212);
+    border-bottom: 1px solid rgb(212, 212, 212);
+}
+div#footer-container div.footer-about>div>div:nth-child(1){
+    padding: 25px 10px;
+    text-align: right;
+
+}
+div#footer-container div.footer-about>div>div:nth-child(1)>div>div:nth-child(1)>h2{
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    line-height: 30px;
+}
+div#footer-container div.footer-about>div>div:nth-child(1)>div>div:nth-child(2){
+    font-size: 14px;
+    color: #333;
+    line-height: 25px;
+    padding-top: 20px;
+}
+div#footer-container div.footer-about>div>div:nth-child(1)>div>div:nth-child(3) span{
+    vertical-align: middle;
+    color: #19BFD3;
+}
+div#footer-container div.footer-about>div>div:nth-child(1)>div>div:nth-child(3) i{
+    color: #19BFD3;
+    vertical-align: middle;
+}
+div#footer-container div.footer-about>div>div:nth-child(2){
+    padding: 30px 0;
+}
+div#footer-container div.footer-about>div>div:nth-child(2)>div>div>div{
+    padding: 0;
+    margin: 0;
+    float: left;
+    text-align: center;
+}
+div#footer-container div.footer-about>div>div:nth-child(2)>div>div>div>a{
+    display: block;
+    width: 109px;
+    height: 109px;
+    border-radius: 15px;
+    box-shadow: 0 0 .1px .4px rgba(148, 148, 148, 0.293);
+    text-align: center;
+    padding-top: 20px;
+}
+div#footer-container div.footer-about>div>div:nth-child(2)>div>div>div>a>img{
+    width: 75px;
+    height: 75px;
+    vertical-align: bottom;
+}
+
+
+                                /* finish footer about */
+
+
+                                /* start footer copyright */
+
+                                
+div#footer-container div.footer-copyright{
+    padding: 30px;
+}
+div#footer-container div.footer-copyright h4{
+    font-size: 14px;
+    color: #444;
+    font-weight: 300;
+    line-height: 25px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+                                    /* finish footer copyright */
+
+
+                                    /* finish footer */
+
+
+@media screen and (max-width: 1200px) {
+    div#header-container div.header-top-row>div.header-logo{
+        text-align: center;
+        background-color: #222;
+        padding-bottom: 15px;
+    }
+    div#header-container div.header-top-row>div.header-logo img{
+        width: 20%;
+     }
+     div#header-container div.header-bottom-row{
+        display: none;
+     }
+     div#header-container div.header-user-location{
+        display: none;
+     }
+     div#header-container div#header-sliding-menu{
+        display: block;
+     }
+     div#sliding-menu{
+        display: block;
+     }
+     div#top-header-ads{
+        display: none;
+     }
+     div#main-products-menu>nav>ul>li>ul img{
+        display: none;
+    }
+    div#main-products-menu{
+        display: none;
+    }
+    div#main-container div#carouselExampleIndicators>button:hover{
+        background-color: rgba(255, 255, 255, 0);
+    }
+    div#main-container div#carouselExampleIndicators>div>button{
+        display: none;
+    }
+    div#main-container div.main-services{
+        display: none;
+    }
+    div#main-container div.main-amazing-slider{
+        border-radius: 0;
+    }
+    div#main-container div.main-brands-slider{
+        border-radius: 0;
+    }
+    div#main-container div.products-carousel>div.row>div.col-12{
+        margin-bottom: 5px;
+        box-shadow: none;
+    }
+    div#main-container div.products-carousel{
+        border-radius: 0;
+    }
+    div#main-container div.most-sells{
+        border-radius: 0;
+    }
+    div#main-container div.best-discount{
+        border-radius: 0;
+    }
+    div#footer-container div.main-services{
+        display: none;
+    }
+    div#footer-container div.app-download>div>div>div:nth-child(1){
+        text-align: center;
+        padding: 5px 0;
+        padding-bottom: 10px;
+        vertical-align: middle;
+        box-shadow: 0 1px .1px .4px rgba(148, 148, 148, 0.17);
+    }
+    div#footer-container div.app-download>div>div>div:nth-child(2){
+        padding-top:10px ;
+    }
+    div#footer-container div.app-download>div>div>div:nth-child(2) div{
+        text-align: center;
+    }
+    div#footer-container div.app-download>div>div>div:nth-child(2)>div>div>div>a{
+        padding: 5px;
+    }
+
+    
+}
+@media screen and (max-width: 420px) {
+    div#header-container div.header-top-row div.header-left-buttons{
+        display: none;
+    }
+    div#header-container div.header-top-row div.header-search-box{
+        flex-grow: 12;
+    }
+    div#header-container div#header-sliding-menu{
+        top: 3px;
+     }
+     div#main-container div.main-amazing-slider div.owl-carousel img{
+        width: 130px;
+     }
+     div#main-container div.most-sells>div.most-sells-main>div.container>div.row>div{
+        box-shadow: none;
+    }
+    div#main-container div.most-sells>div.most-sells-main>div.container>div.row>div>a{
+        box-shadow: none;
+    }
+    div#main-container div.most-sells>div.most-sells-intro{
+        text-align: right !important;
+    }
+    div#main-container div.most-sells>div>h3{
+        margin: 0 !important;
+    }    
+    div#footer-container div.app-download>div>div>div{
+        text-align: center;
+    }
+    div#main-container div.main-category>div:nth-child(2)>div img{
+        width: 130px;
+    }
+    
+    
+}

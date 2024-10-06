@@ -1,0 +1,1738 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/lbkhnd.svg" type="image/x-i" />
+    <link rel="stylesheet" href="css/font.css">
+    <title>Digikala</title>
+</head>
+<body>
+    <header>
+        <div id="header-container" class="container-fluid">
+            <div id="top-header-ads">
+                <a href=""><img src="images/top-header-ads.jpg" alt="ads" width="100%"></a>
+            </div>        
+            <div class="row header-top-row">
+                <div class="col-xl-1 col-sm-12 header-logo">
+                    <a href="index.html"><img src="images/logo.png" alt="logo" width="100%"></a>
+                </div>
+                <div class="col-xl-5 col-5 header-search-box">
+                    <div dir="ltr" class="input-group mb-3">
+                        <input dir="rtl" type="text" class="form-control border-0" placeholder="دنبال چیزی می گردی ؟" aria-label="Recipient's username" aria-describedby="button-addon2" />
+                        <button class="btn bg-danger" type="button" id="button-addon2"><i class="fa fa-search" style="font-size:18px"></i></button>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-7 header-left-buttons">
+                    <div class="header-sign-buttons">
+                        <button type="button"><i class="fa fa-user" style="font-size:22px"></i><span>ورود / ثبت نام</span></button>
+                    </div>
+                    <div class="header-cart">
+                        <button type="button"><i class="fa fa-shopping-cart" style="font-size:22px"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom-row">
+                <div><h3><i class="fa fa-navicon" style="font-size: 20px"></i> دسته بندی کالاها</h3></div>
+                <div><h3><i class="fa fa-gift" style="font-size:20px"></i>شگفت انگیز ها</h3></div>
+                <div><h3><i class="fa fa-shopping-cart" style="font-size: 20px;"></i>سوپرمارکت</h3></div>
+                <div><h3><i class="fa fa-gift" style="font-size: 20px"></i>کارت هدیه</h3></div>
+                <div><h3><i class="fa fa-fire" style="font-size: 20px"></i>پرفروش ترین ها</h3></div>
+                <div><h3><i class="fa fa-gift" style="font-size: 20px"></i>تخفیف‌ها و پیشنهادها</h3></div>
+                <div><h3>سوالی دارید؟</h3></div>
+                <div><h3>در دیجیکالا بفروشید!</h3></div>
+                <!-- <div class="p-0"><a href="post-archive.html" class="d-block w-100 h-100"><h3>مقالات</h3></a></div>
+                <div><h3>درباره ما</h3></div>
+                <div><h3>تماس با ما</h3></div> -->
+                <div class="header-user-location">
+                    <p><i class="material-icons" style="font-size:18px">location_on</i>ارسال به <span id="header-location">تهران ، تهران</span></p>
+                </div>    
+            </div>
+            <div id="header-sliding-menu" onclick="openSlidingMenu()"><i class="fa fa-navicon" style="font: size 2400px"></i></div>
+        </div>
+    </header>
+    <div id="main-products-menu">
+        <nav>
+            <ul>
+                <li>
+                    <h3>کالای دیجیتال</h3>
+                    <ul>
+                        <div class="container text-center">
+
+                            <li><a href="category.html">مشاهده تمام محصولات</a></li>
+                            <div class="row">
+                                <div class="col-3 col-sm-3">
+                                    <li><h3>موبایل</h3></li>
+                                    <li><a href="">اپل</a></li>
+                                    <li><a href="">سامسونگ</a></li>
+                                    <li><a href="">شیائومی</a></li>
+                                    <li><a href="">نوکیا</a></li>
+                                    <li><h3>هدفون وهندزفری</h3></li>
+                                    <li><a href="">بلوتوثی</a></li>
+                                    <li><a href="">گیمینگ</a></li>
+                                    <li><a href="">ورزشی</a></li>
+                                    <li><a href="">بی سیم</a></li>
+                                </div>
+                                <div class="col-3 col-sm-3">
+                                    <li><h3>کامپیوتر و لوازم جانبی</h3></li>
+                                    <li><a href="">موس</a></li>
+                                    <li><a href="">قطعات کامپیوتر</a></li>
+                                    <li><a href="">مانیتور</a></li>
+                                    <li><a href="">کیس های اسمبل شده</a></li>
+                                    <li><a href="">کیس</a></li>
+                                    <li><h3>لپ تاپ</h3></li>
+                                    <li><a href="">لنوو</a></li>
+                                    <li><a href="">ایسووس</a></li>
+                                    <li><a href="">ام اس آی</a></li>
+                                </div>
+                          
+                              <!-- Force next columns to break to new line at md breakpoint and up -->
+                              <!-- <div class="w-100 d-none d-md-block bg-success">dfgd</div> -->
+                          
+                                <div class="col-3 col-sm-3">
+                                    <li><h3>دوربین و تجهیزات مدار بسته</h3></li>
+                                    <li><a href="">عنوان 1</a></li>
+                                    <li><a href="">عنوان 2</a></li>
+                                    <li><a href="">عنوان3</a></li>
+                                    <li><h3>دوربین عکاسی</h3></li>
+                                    <li><a href="">عنوان 1</a></li>
+                                    <li><a href="">عنوان 2</a></li>
+                                    <li><h3>مودم و تجهیزات اینترنت</h3></li>
+                                    <li><a href="">روتر</a></li>
+                                </div>
+                                <div class="col-3 col-sm-3">
+                                    <li><h3>کامپیوتر و لوازم جانبی</h3></li>
+                                    <li><a href="">موس</a></li>
+                                    <li><a href="">قطعات کامپیوتر</a></li>
+                                    <li><a href="">مانیتور</a></li>
+                                    <li><a href="">کیس های اسمبل شده</a></li>
+                                    <li><a href="">کیس</a></li>
+                                    <li><h3>لپ تاپ</h3></li>
+                                    <li><a href="">لنوو</a></li>
+                                    <li><a href="">ایسووس</a></li>
+                                    <li><a href="">ام اس آی</a></li>
+                                </div>
+                                <div><a href=""><img src="images/razer-blade-17-1.jpeg" alt="ads" width="200px"></a></div>
+                            </div>
+                        </div>
+                    </ul>
+                </li>
+                <li>
+                    <h3>مد و پوشاک</h3>
+                    <ul>
+                        <div class="container text-center">
+
+                            <li><a href="">مشاهده تمام محصولات</a></li>
+                            <div class="row">
+                                <div class="col-3 col-sm-3">
+                                    <li><h3>کامپیوتر و لوازم جانبی</h3></li>
+                                    <li><a href="">موس</a></li>
+                                    <li><a href="">قطعات کامپیوتر</a></li>
+                                    <li><a href="">مانیتور</a></li>
+                                    <li><a href="">کیس های اسمبل شده</a></li>
+                                    <li><a href="">کیس</a></li>
+                                    <li><h3>لپ تاپ</h3></li>
+                                    <li><a href="">لنوو</a></li>
+                                    <li><a href="">ایسووس</a></li>
+                                    <li><a href="">ام اس آی</a></li>
+                                </div>
+                                <div class="col-3 col-sm-3">
+                                    <li><h3>موبایل</h3></li>
+                                    <li><a href="">اپل</a></li>
+                                    <li><a href="">سامسونگ</a></li>
+                                    <li><a href="">شیائومی</a></li>
+                                    <li><a href="">نوکیا</a></li>
+                                    <li><h3>هدفون وهندزفری</h3></li>
+                                    <li><a href="">بلوتوثی</a></li>
+                                    <li><a href="">گیمینگ</a></li>
+                                    <li><a href="">ورزشی</a></li>
+                                    <li><a href="">بی سیم</a></li>
+                                </div>
+                          
+                              <!-- Force next columns to break to new line at md breakpoint and up -->
+                              <!-- <div class="w-100 d-none d-md-block bg-success">dfgd</div> -->
+                                <div class="col-3 col-sm-3">
+                                    <li><h3>کامپیوتر و لوازم جانبی</h3></li>
+                                    <li><a href="">موس</a></li>
+                                    <li><a href="">قطعات کامپیوتر</a></li>
+                                    <li><a href="">مانیتور</a></li>
+                                    <li><a href="">کیس های اسمبل شده</a></li>
+                                    <li><a href="">کیس</a></li>
+                                    <li><h3>لپ تاپ</h3></li>
+                                    <li><a href="">لنوو</a></li>
+                                    <li><a href="">ایسووس</a></li>
+                                    <li><a href="">ام اس آی</a></li>
+                                </div>
+                                <div class="col-3 col-sm-3">
+                                    <li><h3>دوربین و تجهیزات مدار بسته</h3></li>
+                                    <li><a href="">عنوان 1</a></li>
+                                    <li><a href="">عنوان 2</a></li>
+                                    <li><a href="">عنوان3</a></li>
+                                    <li><h3>دوربین عکاسی</h3></li>
+                                    <li><a href="">عنوان 1</a></li>
+                                    <li><a href="">عنوان 2</a></li>
+                                    <li><h3>مودم و تجهیزات اینترنت</h3></li>
+                                    <li><a href="">روتر</a></li>
+                                </div>
+                                <div><a href=""><img src="images/razer-blade-17-1.jpeg" alt="ads" width="200px"></a></div>
+                            </div>
+                        </div>
+                    </ul>
+                </li>
+                <li>
+                    <h3>خانه و آشپزخانه</h3>
+                    <ul>
+                        <div class="container text-center">
+
+                            <li><a href="">مشاهده تمام محصولات</a></li>
+                            <div class="row">
+                                <div class="col-3 col-sm-3">
+                                    <li><h3>موبایل</h3></li>
+                                    <li><a href="">اپل</a></li>
+                                    <li><a href="">سامسونگ</a></li>
+                                    <li><a href="">شیائومی</a></li>
+                                    <li><a href="">نوکیا</a></li>
+                                    <li><h3>هدفون وهندزفری</h3></li>
+                                    <li><a href="">بلوتوثی</a></li>
+                                    <li><a href="">گیمینگ</a></li>
+                                    <li><a href="">ورزشی</a></li>
+                                    <li><a href="">بی سیم</a></li>
+                                </div>
+                                <div class="col-3 col-sm-3">
+                                    <li><h3>کامپیوتر و لوازم جانبی</h3></li>
+                                    <li><a href="">موس</a></li>
+                                    <li><a href="">قطعات کامپیوتر</a></li>
+                                    <li><a href="">مانیتور</a></li>
+                                    <li><a href="">کیس های اسمبل شده</a></li>
+                                    <li><a href="">کیس</a></li>
+                                    <li><h3>لپ تاپ</h3></li>
+                                    <li><a href="">لنوو</a></li>
+                                    <li><a href="">ایسووس</a></li>
+                                    <li><a href="">ام اس آی</a></li>
+                                </div>
+                          
+                              <!-- Force next columns to break to new line at md breakpoint and up -->
+                              <!-- <div class="w-100 d-none d-md-block bg-success">dfgd</div> -->
+                          
+                                <div class="col-3 col-sm-3">
+                                    <li><h3>دوربین و تجهیزات مدار بسته</h3></li>
+                                    <li><a href="">عنوان 1</a></li>
+                                    <li><a href="">عنوان 2</a></li>
+                                    <li><a href="">عنوان3</a></li>
+                                    <li><h3>دوربین عکاسی</h3></li>
+                                    <li><a href="">عنوان 1</a></li>
+                                    <li><a href="">عنوان 2</a></li>
+                                    <li><h3>مودم و تجهیزات اینترنت</h3></li>
+                                    <li><a href="">روتر</a></li>
+                                </div>
+                                <div class="col-3 col-sm-3">
+                                    <li><h3>کامپیوتر و لوازم جانبی</h3></li>
+                                    <li><a href="">موس</a></li>
+                                    <li><a href="">قطعات کامپیوتر</a></li>
+                                    <li><a href="">مانیتور</a></li>
+                                    <li><a href="">کیس های اسمبل شده</a></li>
+                                    <li><a href="">کیس</a></li>
+                                    <li><h3>لپ تاپ</h3></li>
+                                    <li><a href="">لنوو</a></li>
+                                    <li><a href="">ایسووس</a></li>
+                                    <li><a href="">ام اس آی</a></li>
+                                </div>
+                                <div><a href=""><img src="images/razer-blade-17-1.jpeg" alt="ads" width="200px"></a></div>
+                            </div>
+                        </div>
+                    </ul>
+                </li>
+                <li>
+                    <h3>زیبایی و سلامت</h3>
+                    <ul>
+                        <div class="container text-center">
+
+                            <li><a href="">مشاهده تمام محصولات</a></li>
+                            <div class="row">
+                                <div class="col-3 col-sm-3">
+                                    <li><h3>کامپیوتر و لوازم جانبی</h3></li>
+                                    <li><a href="">موس</a></li>
+                                    <li><a href="">قطعات کامپیوتر</a></li>
+                                    <li><a href="">مانیتور</a></li>
+                                    <li><a href="">کیس های اسمبل شده</a></li>
+                                    <li><a href="">کیس</a></li>
+                                    <li><h3>لپ تاپ</h3></li>
+                                    <li><a href="">لنوو</a></li>
+                                    <li><a href="">ایسووس</a></li>
+                                    <li><a href="">ام اس آی</a></li>
+                                </div>
+                                <div class="col-3 col-sm-3">
+                                    <li><h3>موبایل</h3></li>
+                                    <li><a href="">اپل</a></li>
+                                    <li><a href="">سامسونگ</a></li>
+                                    <li><a href="">شیائومی</a></li>
+                                    <li><a href="">نوکیا</a></li>
+                                    <li><h3>هدفون وهندزفری</h3></li>
+                                    <li><a href="">بلوتوثی</a></li>
+                                    <li><a href="">گیمینگ</a></li>
+                                    <li><a href="">ورزشی</a></li>
+                                    <li><a href="">بی سیم</a></li>
+                                </div>
+                          
+                              <!-- Force next columns to break to new line at md breakpoint and up -->
+                              <!-- <div class="w-100 d-none d-md-block bg-success">dfgd</div> -->
+                                <div class="col-3 col-sm-3">
+                                    <li><h3>کامپیوتر و لوازم جانبی</h3></li>
+                                    <li><a href="">موس</a></li>
+                                    <li><a href="">قطعات کامپیوتر</a></li>
+                                    <li><a href="">مانیتور</a></li>
+                                    <li><a href="">کیس های اسمبل شده</a></li>
+                                    <li><a href="">کیس</a></li>
+                                    <li><h3>لپ تاپ</h3></li>
+                                    <li><a href="">لنوو</a></li>
+                                    <li><a href="">ایسووس</a></li>
+                                    <li><a href="">ام اس آی</a></li>
+                                </div>
+                                <div class="col-3 col-sm-3">
+                                    <li><h3>دوربین و تجهیزات مدار بسته</h3></li>
+                                    <li><a href="">عنوان 1</a></li>
+                                    <li><a href="">عنوان 2</a></li>
+                                    <li><a href="">عنوان3</a></li>
+                                    <li><h3>دوربین عکاسی</h3></li>
+                                    <li><a href="">عنوان 1</a></li>
+                                    <li><a href="">عنوان 2</a></li>
+                                    <li><h3>مودم و تجهیزات اینترنت</h3></li>
+                                    <li><a href="">روتر</a></li>
+                                </div>
+                                <div><a href=""><img src="images/razer-blade-17-1.jpeg" alt="ads" width="200px"></a></div>
+                            </div>
+                        </div>
+                    </ul>
+                </li>
+                <li>
+                    <h3>ماشین و ابزار صنعتی</h3>
+                    <ul>
+                        <div class="container text-center">
+
+                            <li><a href="">مشاهده تمام محصولات</a></li>
+                            <div class="row">
+                                <div class="col-3 col-sm-3">
+                                    <li><h3>موبایل</h3></li>
+                                    <li><a href="">اپل</a></li>
+                                    <li><a href="">سامسونگ</a></li>
+                                    <li><a href="">شیائومی</a></li>
+                                    <li><a href="">نوکیا</a></li>
+                                    <li><h3>هدفون وهندزفری</h3></li>
+                                    <li><a href="">بلوتوثی</a></li>
+                                    <li><a href="">گیمینگ</a></li>
+                                    <li><a href="">ورزشی</a></li>
+                                    <li><a href="">بی سیم</a></li>
+                                </div>
+                                <div class="col-3 col-sm-3">
+                                    <li><h3>کامپیوتر و لوازم جانبی</h3></li>
+                                    <li><a href="">موس</a></li>
+                                    <li><a href="">قطعات کامپیوتر</a></li>
+                                    <li><a href="">مانیتور</a></li>
+                                    <li><a href="">کیس های اسمبل شده</a></li>
+                                    <li><a href="">کیس</a></li>
+                                    <li><h3>لپ تاپ</h3></li>
+                                    <li><a href="">لنوو</a></li>
+                                    <li><a href="">ایسووس</a></li>
+                                    <li><a href="">ام اس آی</a></li>
+                                </div>
+                          
+                              <!-- Force next columns to break to new line at md breakpoint and up -->
+                              <!-- <div class="w-100 d-none d-md-block bg-success">dfgd</div> -->
+                          
+                                <div class="col-3 col-sm-3">
+                                    <li><h3>دوربین و تجهیزات مدار بسته</h3></li>
+                                    <li><a href="">عنوان 1</a></li>
+                                    <li><a href="">عنوان 2</a></li>
+                                    <li><a href="">عنوان3</a></li>
+                                    <li><h3>دوربین عکاسی</h3></li>
+                                    <li><a href="">عنوان 1</a></li>
+                                    <li><a href="">عنوان 2</a></li>
+                                    <li><h3>مودم و تجهیزات اینترنت</h3></li>
+                                    <li><a href="">روتر</a></li>
+                                </div>
+                                <div class="col-3 col-sm-3">
+                                    <li><h3>کامپیوتر و لوازم جانبی</h3></li>
+                                    <li><a href="">موس</a></li>
+                                    <li><a href="">قطعات کامپیوتر</a></li>
+                                    <li><a href="">مانیتور</a></li>
+                                    <li><a href="">کیس های اسمبل شده</a></li>
+                                    <li><a href="">کیس</a></li>
+                                    <li><h3>لپ تاپ</h3></li>
+                                    <li><a href="">لنوو</a></li>
+                                    <li><a href="">ایسووس</a></li>
+                                    <li><a href="">ام اس آی</a></li>
+                                </div>
+                                <div><a href=""><img src="images/razer-blade-17-1.jpeg" alt="ads" width="200px"></a></div>
+                            </div>
+                        </div>
+                    </ul>
+                </li>
+                <li>
+                    <h3>کودک و نوزاد</h3>
+                    <ul>
+                        <div class="container text-center">
+
+                            <li><a href="">مشاهده تمام محصولات</a></li>
+                            <div class="row">
+                                <div class="col-3 col-sm-3">
+                                    <li><h3>کامپیوتر و لوازم جانبی</h3></li>
+                                    <li><a href="">موس</a></li>
+                                    <li><a href="">قطعات کامپیوتر</a></li>
+                                    <li><a href="">مانیتور</a></li>
+                                    <li><a href="">کیس های اسمبل شده</a></li>
+                                    <li><a href="">کیس</a></li>
+                                    <li><h3>لپ تاپ</h3></li>
+                                    <li><a href="">لنوو</a></li>
+                                    <li><a href="">ایسووس</a></li>
+                                    <li><a href="">ام اس آی</a></li>
+                                </div>
+                                <div class="col-3 col-sm-3">
+                                    <li><h3>موبایل</h3></li>
+                                    <li><a href="">اپل</a></li>
+                                    <li><a href="">سامسونگ</a></li>
+                                    <li><a href="">شیائومی</a></li>
+                                    <li><a href="">نوکیا</a></li>
+                                    <li><h3>هدفون وهندزفری</h3></li>
+                                    <li><a href="">بلوتوثی</a></li>
+                                    <li><a href="">گیمینگ</a></li>
+                                    <li><a href="">ورزشی</a></li>
+                                    <li><a href="">بی سیم</a></li>
+                                </div>
+                          
+                              <!-- Force next columns to break to new line at md breakpoint and up -->
+                              <!-- <div class="w-100 d-none d-md-block bg-success">dfgd</div> -->
+                                <div class="col-3 col-sm-3">
+                                    <li><h3>کامپیوتر و لوازم جانبی</h3></li>
+                                    <li><a href="">موس</a></li>
+                                    <li><a href="">قطعات کامپیوتر</a></li>
+                                    <li><a href="">مانیتور</a></li>
+                                    <li><a href="">کیس های اسمبل شده</a></li>
+                                    <li><a href="">کیس</a></li>
+                                    <li><h3>لپ تاپ</h3></li>
+                                    <li><a href="">لنوو</a></li>
+                                    <li><a href="">ایسووس</a></li>
+                                    <li><a href="">ام اس آی</a></li>
+                                </div>
+                                <div class="col-3 col-sm-3">
+                                    <li><h3>دوربین و تجهیزات مدار بسته</h3></li>
+                                    <li><a href="">عنوان 1</a></li>
+                                    <li><a href="">عنوان 2</a></li>
+                                    <li><a href="">عنوان3</a></li>
+                                    <li><h3>دوربین عکاسی</h3></li>
+                                    <li><a href="">عنوان 1</a></li>
+                                    <li><a href="">عنوان 2</a></li>
+                                    <li><h3>مودم و تجهیزات اینترنت</h3></li>
+                                    <li><a href="">روتر</a></li>
+                                </div>
+                                <div><a href=""><img src="images/razer-blade-17-1.jpeg" alt="ads" width="200px"></a></div>
+                            </div>
+                        </div>
+                    </ul>
+                </li>
+                <li>
+                    <h3>کتاب و لوازم تحریر</h3>
+                    <ul>
+                        <div class="container text-center">
+
+                            <li><a href="">مشاهده تمام محصولات</a></li>
+                            <div class="row">
+                                <div class="col-3 col-sm-3">
+                                    <li><h3>موبایل</h3></li>
+                                    <li><a href="">اپل</a></li>
+                                    <li><a href="">سامسونگ</a></li>
+                                    <li><a href="">شیائومی</a></li>
+                                    <li><a href="">نوکیا</a></li>
+                                    <li><h3>هدفون وهندزفری</h3></li>
+                                    <li><a href="">بلوتوثی</a></li>
+                                    <li><a href="">گیمینگ</a></li>
+                                    <li><a href="">ورزشی</a></li>
+                                    <li><a href="">بی سیم</a></li>
+                                </div>
+                                <div class="col-3 col-sm-3">
+                                    <li><h3>کامپیوتر و لوازم جانبی</h3></li>
+                                    <li><a href="">موس</a></li>
+                                    <li><a href="">قطعات کامپیوتر</a></li>
+                                    <li><a href="">مانیتور</a></li>
+                                    <li><a href="">کیس های اسمبل شده</a></li>
+                                    <li><a href="">کیس</a></li>
+                                    <li><h3>لپ تاپ</h3></li>
+                                    <li><a href="">لنوو</a></li>
+                                    <li><a href="">ایسووس</a></li>
+                                    <li><a href="">ام اس آی</a></li>
+                                </div>
+                          
+                              <!-- Force next columns to break to new line at md breakpoint and up -->
+                              <!-- <div class="w-100 d-none d-md-block bg-success">dfgd</div> -->
+                          
+                                <div class="col-3 col-sm-3">
+                                    <li><h3>دوربین و تجهیزات مدار بسته</h3></li>
+                                    <li><a href="">عنوان 1</a></li>
+                                    <li><a href="">عنوان 2</a></li>
+                                    <li><a href="">عنوان3</a></li>
+                                    <li><h3>دوربین عکاسی</h3></li>
+                                    <li><a href="">عنوان 1</a></li>
+                                    <li><a href="">عنوان 2</a></li>
+                                    <li><h3>مودم و تجهیزات اینترنت</h3></li>
+                                    <li><a href="">روتر</a></li>
+                                </div>
+                                <div class="col-3 col-sm-3">
+                                    <li><h3>کامپیوتر و لوازم جانبی</h3></li>
+                                    <li><a href="">موس</a></li>
+                                    <li><a href="">قطعات کامپیوتر</a></li>
+                                    <li><a href="">مانیتور</a></li>
+                                    <li><a href="">کیس های اسمبل شده</a></li>
+                                    <li><a href="">کیس</a></li>
+                                    <li><h3>لپ تاپ</h3></li>
+                                    <li><a href="">لنوو</a></li>
+                                    <li><a href="">ایسووس</a></li>
+                                    <li><a href="">ام اس آی</a></li>
+                                </div>
+                                <div><a href=""><img src="images/razer-blade-17-1.jpeg" alt="ads" width="200px"></a></div>
+                            </div>
+                        </div>
+                    </ul>
+                </li>
+                <li>
+                    <h3>سوغات و صنایع دستی</h3>
+                    <ul>
+                        <div class="container text-center">
+
+                            <li><a href="">مشاهده تمام محصولات</a></li>
+                            <div class="row">
+                                <div class="col-3 col-sm-3">
+                                    <li><h3>کامپیوتر و لوازم جانبی</h3></li>
+                                    <li><a href="">موس</a></li>
+                                    <li><a href="">قطعات کامپیوتر</a></li>
+                                    <li><a href="">مانیتور</a></li>
+                                    <li><a href="">کیس های اسمبل شده</a></li>
+                                    <li><a href="">کیس</a></li>
+                                    <li><h3>لپ تاپ</h3></li>
+                                    <li><a href="">لنوو</a></li>
+                                    <li><a href="">ایسووس</a></li>
+                                    <li><a href="">ام اس آی</a></li>
+                                </div>
+                                <div class="col-3 col-sm-3">
+                                    <li><h3>موبایل</h3></li>
+                                    <li><a href="">اپل</a></li>
+                                    <li><a href="">سامسونگ</a></li>
+                                    <li><a href="">شیائومی</a></li>
+                                    <li><a href="">نوکیا</a></li>
+                                    <li><h3>هدفون وهندزفری</h3></li>
+                                    <li><a href="">بلوتوثی</a></li>
+                                    <li><a href="">گیمینگ</a></li>
+                                    <li><a href="">ورزشی</a></li>
+                                    <li><a href="">بی سیم</a></li>
+                                </div>
+                          
+                              <!-- Force next columns to break to new line at md breakpoint and up -->
+                              <!-- <div class="w-100 d-none d-md-block bg-success">dfgd</div> -->
+                                <div class="col-3 col-sm-3">
+                                    <li><h3>کامپیوتر و لوازم جانبی</h3></li>
+                                    <li><a href="">موس</a></li>
+                                    <li><a href="">قطعات کامپیوتر</a></li>
+                                    <li><a href="">مانیتور</a></li>
+                                    <li><a href="">کیس های اسمبل شده</a></li>
+                                    <li><a href="">کیس</a></li>
+                                    <li><h3>لپ تاپ</h3></li>
+                                    <li><a href="">لنوو</a></li>
+                                    <li><a href="">ایسووس</a></li>
+                                    <li><a href="">ام اس آی</a></li>
+                                </div>
+                                <div class="col-3 col-sm-3">
+                                    <li><h3>دوربین و تجهیزات مدار بسته</h3></li>
+                                    <li><a href="">عنوان 1</a></li>
+                                    <li><a href="">عنوان 2</a></li>
+                                    <li><a href="">عنوان3</a></li>
+                                    <li><h3>دوربین عکاسی</h3></li>
+                                    <li><a href="">عنوان 1</a></li>
+                                    <li><a href="">عنوان 2</a></li>
+                                    <li><h3>مودم و تجهیزات اینترنت</h3></li>
+                                    <li><a href="">روتر</a></li>
+                                </div>
+                                <div><a href=""><img src="images/razer-blade-17-1.jpeg" alt="ads" width="200px"></a></div>
+                            </div>
+                        </div>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="swiper" id="sliding-menu">
+        <div class="sliding-menu-logo">
+            <a href=""><img src="images/logo.png" alt="" width="100px"></a>
+            <div class="close-sliding-menu" onclick="closeSlidingMenu()">
+                <i class="fa fa-close" style="font-size:28px"></i>
+            </div>
+        </div>
+        <div class="sliding-menu-sign">
+            <a href=""><i class="fa fa-sign-in" aria-hidden="true" style="font-size:17px"></i> <span>ورود / ثبت نام</span></a>
+        </div>
+        <div class="sliding-menu-cart">
+            <a href=""><i class="fa fa-shopping-cart" style="font-size:17px"></i><span>مشاهده سبد خرید</span></a>
+        </div>
+        <div class="sliding-menu-main">
+            <div class="accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        کالای دیجیتال <i class="fa fa-chevron-down" style="font-size:14px"></i>  
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <ul class="group1">
+                            <li>
+                                <a href=""><h3>گوشی موبایل</h3></a>
+                                <ul class="group2">
+                                    <a href=""><li>اپل</li></a>
+                                    <a href=""><li>شیائومی</li></a>
+                                    <a href=""><li>سامسونگ</li></a>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href=""><h3>لپ تاپ</h3></a>
+                                <ul class="group2">
+                                    <a href=""><li>ایسوس</li></a>
+                                    <a href=""><li>ام اس آی</li></a>
+                                    <a href=""><li>لنوو</li></a>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href=""><h3>هدفون و هندزفری</h3></a>
+                                <ul class="group2">
+                                    <a href=""><li>بلوتوثی</li></a>
+                                    <a href=""><li>ایرپاد</li></a>
+                                    <a href=""><li>گیمینگ</li></a>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href=""><h3>کامپیوتر و لوازم جانبی</h3></a>
+                                <ul class="group2">
+                                    <a href=""><li>موس</li></a>
+                                    <a href=""><li>مانیتور</li></a>
+                                    <a href=""><li>کیس های اسمبل شده</li></a>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        مد و پوشاک <i class="fa fa-chevron-down" style="font-size:14px"></i>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <ul class="group1">
+                            <li>
+                                <a href=""><h3>گوشی موبایل</h3></a>
+                                <ul class="group2">
+                                    <a href=""><li>اپل</li></a>
+                                    <a href=""><li>شیائومی</li></a>
+                                    <a href=""><li>سامسونگ</li></a>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href=""><h3>لپ تاپ</h3></a>
+                                <ul class="group2">
+                                    <a href=""><li>ایسوس</li></a>
+                                    <a href=""><li>ام اس آی</li></a>
+                                    <a href=""><li>لنوو</li></a>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href=""><h3>هدفون و هندزفری</h3></a>
+                                <ul class="group2">
+                                    <a href=""><li>بلوتوثی</li></a>
+                                    <a href=""><li>ایرپاد</li></a>
+                                    <a href=""><li>گیمینگ</li></a>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href=""><h3>کامپیوتر و لوازم جانبی</h3></a>
+                                <ul class="group2">
+                                    <a href=""><li>موس</li></a>
+                                    <a href=""><li>مانیتور</li></a>
+                                    <a href=""><li>کیس های اسمبل شده</li></a>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      خانه و آشپزخانه<i class="fa fa-chevron-down" style="font-size:14px"></i>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <ul class="group1">
+                            <li>
+                                <a href=""><h3>گوشی موبایل</h3></a>
+                                <ul class="group2">
+                                    <a href=""><li>اپل</li></a>
+                                    <a href=""><li>شیائومی</li></a>
+                                    <a href=""><li>سامسونگ</li></a>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href=""><h3>لپ تاپ</h3></a>
+                                <ul class="group2">
+                                    <a href=""><li>ایسوس</li></a>
+                                    <a href=""><li>ام اس آی</li></a>
+                                    <a href=""><li>لنوو</li></a>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href=""><h3>هدفون و هندزفری</h3></a>
+                                <ul class="group2">
+                                    <a href=""><li>بلوتوثی</li></a>
+                                    <a href=""><li>ایرپاد</li></a>
+                                    <a href=""><li>گیمینگ</li></a>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href=""><h3>کامپیوتر و لوازم جانبی</h3></a>
+                                <ul class="group2">
+                                    <a href=""><li>موس</li></a>
+                                    <a href=""><li>مانیتور</li></a>
+                                    <a href=""><li>کیس های اسمبل شده</li></a>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="black-background" onclick="closeSlidingMenu()"></div>
+    <main>
+        <div id="main-container" class="container-fluid p-0">
+            <div class="main-top-carousel">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="swiper-container">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./images/showStory.jpg">
+                        <p>دیجی اکسپرس<br><h6>سریع میاره</h6></p></div>
+                        <div class="swiper-slide"><img src="./images/showStory.jpg">
+                        <p>دیجی اکسپرس<br><h6>سریع میاره</h6></p></div>
+                        <div class="swiper-slide"><img src="./images/showStory.jpg">
+                        <p>دیجی اکسپرس<br><h6>سریع میاره</h6></p></div>
+                        <div class="swiper-slide"><img src="./images/showStory.jpg">
+                        <p>دیجی اکسپرس<br><h6>سریع میاره</h6></p></div>
+                        <div class="swiper-slide"><img src="./images/showStory.jpg">
+                        <p>دیجی اکسپرس<br><h6>سریع میاره</h6></p></div>
+                        <div class="swiper-slide"><img src="./images/showStory.jpg">
+                        <p>دیجی اکسپرس<br><h6>سریع میاره</h6></p></div>
+                        <div class="swiper-slide"><img src="./images/showStory.jpg">
+                        <p>دیجی اکسپرس<br><h6>سریع میاره</h6></p></div>
+                        <div class="swiper-slide"><img src="./images/showStory.jpg">
+                        <p>دیجی اکسپرس<br><h6>سریع میاره</h6></p></div>
+                        <div class="swiper-slide"><img src="./images/showStory.jpg">
+                        <p>دیجی اکسپرس<br><h6>سریع میاره</h6></p></div>
+                        <div class="swiper-slide"><img src="./images/showStory.jpg">
+                        <p>دیجی اکسپرس<br><h6>سریع میاره</h6></p></div>
+                        <div class="swiper-slide"><img src="./images/showStory.jpg">
+                        <p>دیجی اکسپرس<br><h6>سریع میاره</h6></p></div>
+                        <div class="swiper-slide"><img src="./images/showStory.jpg">
+                        <p>دیجی اکسپرس<br><h6>سریع میاره</h6></p></div>
+                        <div class="swiper-slide"><img src="./images/showStory.jpg">
+                        <p>دیجی اکسپرس<br><h6>سریع میاره</h6></p></div>
+                        <div class="swiper-slide"><img src="./images/showStory.jpg">
+                        <p>دیجی اکسپرس<br><h6>سریع میاره</h6></p></div>
+                        <div class="swiper-slide"><img src="./images/showStory.jpg">
+                        <p>دیجی اکسپرس<br><h6>سریع میاره</h6></p></div>
+                        <div class="swiper-slide"><img src="./images/showStory.jpg">
+                        <p>دیجی اکسپرس<br><h6>سریع میاره</h6></p></div>
+                        <div class="swiper-slide"><img src="./images/showStory.jpg">
+                        <p>دیجی اکسپرس<br><h6>سریع میاره</h6></p></div>
+                        <div class="swiper-slide"><img src="./images/showStory.jpg">
+                        <p>دیجی اکسپرس<br><h6>سریع میاره</h6></p></div>
+                        <div class="swiper-slide"><img src="./images/showStory.jpg">
+                        <p>دیجی اکسپرس<br><h6>سریع میاره</h6></p></div>
+                        <div class="swiper-slide"><img src="./images/showStory.jpg">
+                        <p>دیجی اکسپرس<br><h6>سریع میاره</h6></p></div>
+                        <div class="swiper-slide"><img src="./images/showStory.jpg">
+                        <p>دیجی اکسپرس<br><h6>سریع میاره</h6></p></div>
+                        <div class="swiper-slide"><img src="./images/showStory.jpg">
+                        <p>دیجی اکسپرس<br><h6>سریع میاره</h6></p></div>
+                        <div class="swiper-slide"><img src="./images/showStory.jpg">
+                        <p>دیجی اکسپرس<br><h6>سریع میاره</h6></p></div>
+                        <div class="swiper-slide"><img src="./images/showStory.jpg">
+                        <p>دیجی اکسپرس<br><h6>سریع میاره</h6></p></div>
+                        <div class="swiper-slide"><img src="./images/showStory.jpg">
+                        <p>دیجی اکسپرس<br><h6>سریع میاره</h6></p></div>
+                        <div class="swiper-slide"><img src="./images/showStory.jpg">
+                        <p>دیجی اکسپرس<br><h6>سریع میاره</h6></p></div>
+                        <div class="swiper-slide"><img src="./images/showStory.jpg">
+                        <p>دیجی اکسپرس<br><h6>سریع میاره</h6></p></div>
+                        <div class="swiper-slide"><img src="./images/showStory.jpg">
+                        <p>دیجی اکسپرس<br><h6>سریع میاره</h6></p></div>
+                        <div class="swiper-slide"><img src="./images/showStory.jpg">
+                        <p>دیجی اکسپرس<br><h6>سریع میاره</h6></p></div>
+                        <div class="swiper-slide"><img src="./images/showStory.jpg">
+                        <p>دیجی اکسپرس<br><h6>سریع میاره</h6></p></div>
+                        <div class="swiper-slide"><img src="./images/showStory.jpg">
+                        <p>دیجی اکسپرس<br><h6>سریع میاره</h6></p></div>
+                        <div class="swiper-slide"><img src="./images/showStory.jpg">
+                        <p>دیجی اکسپرس<br><h6>سریع میاره</h6></p></div>
+                        <div class="swiper-slide"><img src="./images/showStory.jpg">
+                        <p>دیجی اکسپرس<br><h6>سریع میاره</h6></p></div>
+                        <div class="swiper-slide"><img src="./images/showStory.jpg">
+                        <p>دیجی اکسپرس<br><h6>سریع میاره</h6></p></div>
+                        <div class="swiper-slide"><img src="./images/showStory.jpg">
+                        <p>دیجی اکسپرس<br><h6>سریع میاره</h6></p></div>
+                        <div class="swiper-slide"><img src="./images/showStory.jpg">
+                        <p>دیجی اکسپرس<br><h6>سریع میاره</h6></p></div>
+                      </div>
+                      <div class="my-custom-prev"></div>
+                      <div class="my-custom-next"></div>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="images/carousel image 1.jpg" id="myImg" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/carousel image 2.jpg" id="myImg" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/carousel image 3.jpg" id="myImg" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/carousel image 4.jpg" id="myImg" alt="...">
+                      </div>
+                    </div>
+                    <button id="prevBtn" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button id="nextBtn" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+            <div class="main-services">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <a href=""><img src="images/original.png" alt="original"><label for="">ضمانت اصل بودن کالا</label></a>
+                        </div>
+                        <div class="col">
+                            <a href=""><img src="images/7days.png" alt="7days"><label for="">هفت روز ضمانت بازگشت</label></a>
+                        </div>
+                        <div class="col">
+                            <a href=""><img src="images/24hours.png" alt="24hours"><label for="">هفت روز هفته ، 24 ساعته</label></a>
+                        </div>
+                        <div class="col">
+                            <a href=""><img src="images/pay in location.png" alt="pay"><label for="">امکان پرداخت در محل</label></a>
+                        </div>
+                        <div class="col">
+                            <a href=""><img src="images/express delivery.png" alt="express"><label for="">امکان تحویل اکسپرس</label></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-carousel main-amazing-slider container-fluid container-xl swiper-wrappe">
+                <div class="owl-carousel owl-theme">
+                    <div class="item amazing-slider-intro">
+                        <img src="images/amazing intro.png" alt="">
+                        <label for=""><a href="">مشاهده همه</a></label>
+                    </div>
+                    <div class="item amazing-slider-item first-item">
+                        <a href=""><img src="images/test1.jpg" alt="">
+                            <label for="">
+                                <p class="product-name long-name-text">موبایل شیائومی note 8 pro</p>
+                                <p class="price"><span class="discount">22%</span><span>20000</span><span>تومان </span></p>
+                                <p class="price-before-discount"><span>50000</span></p>
+                            </label>
+                        </a>
+                    </div>
+                    <div class="item amazing-slider-item">
+                        <a href=""><img src="images/test5.jpg" alt="">
+                            <label for="">
+                                <p class="product-name long-name-text">موبایل شیائومی note 8 pro</p>
+                                <p class="price"><span class="discount">22%</span><span>20000</span><span>تومان </span></p>
+                                <p class="price-before-discount"><span>50000</span></p>
+                            </label>
+                        </a>
+                    </div>
+                    <div class="item amazing-slider-item">
+                        <a href=""><img src="images/test18.jpg" alt="">
+                            <label for="">
+                                <p class="product-name long-name-text">موبایل شیائومی note 8 pro</p>
+                                <p class="price"><span class="discount">22%</span><span>20000</span><span>تومان </span></p>
+                                <p class="price-before-discount"><span>50000</span></p>
+                            </label>
+                        </a>
+                    </div>
+                    <div class="item amazing-slider-item">
+                        <a href=""><img src="images/test23.jpg" alt="">
+                            <label for="">
+                                <p class="product-name long-name-text">موبایل شیائومی note 8 pro</p>
+                                <p class="price"><span class="discount">22%</span><span>20000</span><span>تومان </span></p>
+                                <p class="price-before-discount"><span>50000</span></p>
+                            </label>
+                        </a>
+                    </div>
+                    <div class="item amazing-slider-item">
+                        <a href=""><img src="images/test19.jpg" alt="">
+                            <label for="">
+                                <p class="product-name long-name-text">موبایل شیائومی note 8 pro</p>
+                                <p class="price"><span class="discount">22%</span><span>20000</span><span>تومان </span></p>
+                                <p class="price-before-discount"><span>50000</span></p>
+                            </label>
+                        </a>
+                    </div>
+                    <div class="item amazing-slider-item">
+                        <a href=""><img src="images/test7.jpg" alt="">
+                            <label for="">
+                                <p class="product-name long-name-text">موبایل شیائومی note 8 pro</p>
+                                <p class="price"><span class="discount">22%</span><span>20000</span><span>تومان </span></p>
+                                <p class="price-before-discount"><span>50000</span></p>
+                            </label>
+                        </a>
+                    </div>
+                    <div class="item amazing-slider-item">
+                        <a href=""><img src="images/test9.jpg" alt="">
+                            <label for="">
+                                <p class="product-name long-name-text">موبایل شیائومی note 8 pro</p>
+                                <p class="price"><span class="discount">22%</span><span>20000</span><span>تومان </span></p>
+                                <p class="price-before-discount"><span>50000</span></p>
+                            </label>
+                        </a>
+                    </div>
+                    <div class="item amazing-slider-item">
+                        <a href=""><img src="images/test10.jpg" alt="">
+                            <label for="">
+                                <p class="product-name long-name-text">موبایل شیائومی note 8</p>
+                                <p class="price"><span class="discount">22%</span><span>20000</span><span>تومان </span></p>
+                                <p class="price-before-discount"><span>50000</span></p>
+                            </label>
+                        </a>
+                    </div>
+                    <div class="item amazing-slider-item">
+                        <a href=""><img src="images/test15.jpg" alt="">
+                            <label for="">
+                                <p class="product-name long-name-text">موبایل شیائومی note 8 pro</p>
+                                <p class="price"><span class="discount">22%</span><span>20000</span><span>تومان </span></p>
+                                <p class="price-before-discount"><span>50000</span></p>
+                            </label>
+                        </a>
+                    </div>
+                    <div class="item amazing-slider-item last-item">
+                        <a href="">
+                            <div>
+                                <span>مشاهده همه</span><span><i class="fa fa-chevron-circle-left" style="font-size:36px"></i></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>                
+            </div>
+            <div class="main-4in1ads container">
+                <div class="row">
+                    <div class="col m-0 p-2 m-lg-0 p-lg-0"><a href=""><img src="images/4in1-1.jpg" alt=""></a></div>
+                    <div class="col-1 d-none m-0 p-0 d-lg-block" style="width: 15px;"></div>
+                    <div class="col m-0 p-2 m-lg-0 p-lg-0"><a href=""><img src="images/4in1-2.jpg" alt=""></a></div>
+                    <div class="main-4in1ads-space w-100 d-lg-none"></div>
+                    <div class="col-1 d-none m-0 p-0 d-lg-block" style="width: 15px;"></div>
+                    <div class="col m-0 p-2 m-lg-0 p-lg-0"><a href=""><img src="images/4in1-3.jpg" alt=""></a></div>
+                    <div class="col-1 d-none m-0 p-0 d-lg-block" style="width: 15px;"></div>
+                    <div class="col m-0 p-2 m-lg-0 p-lg-0"><a href=""><img src="images/4in1-4.jpg" alt=""></a></div>
+                </div>
+            </div>
+            <div class="main-carousel main-brands-slider container-fluid container-xl">
+                <div class="main-carousel-title">
+                    <p><h3>محبوب ترین برند ها</h3></p>
+                </div>
+                <div class="owl-carousel owl-theme">
+                    <div class="item first-item">
+                        <a href=""><img src="images/brand1.png" alt="">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href=""><img src="images/brand2.png" alt="">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href=""><img src="images/brand3.png" alt="">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href=""><img src="images/brand20.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href=""><img src="images/brand17.png" alt="">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href=""><img src="images/brand6.png" alt="">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href=""><img src="images/brand7.png" alt="">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href=""><img src="images/brand15.png" alt="">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href=""><img src="images/brand19.jpg" alt="">
+                        </a>
+                    </div>
+                </div>                
+            </div>
+            <div class="main-2in1ads container">
+                <div class="row">
+                    <div class="col-12 col-sm m-0 p-2 m-lg-0 p-lg-0"><a href=""><img src="images/2in1-1.jpg" alt=""></a></div>
+                    <div class="col-1 d-none m-0 p-0 d-sm-block" style="width: 15px;"></div>
+                    <div class="col-12 col-sm m-0 p-2 m-lg-0 p-lg-0"><a href=""><img src="images/2in1.jpg" alt=""></a></div>
+                </div>
+            </div>
+            <div class="products-carousel container-fluid container-xl">
+                <div class="row">
+                    <div class="col-12 col-sm">
+                        <div class="container text-center">
+                            <div class="row">
+                                <div class="col-12 label"><h3>گوشی موبایل</h3></div>
+                                <div class="col-12 note1"><p>بر اساس بازدید های شما</p></div>
+                                
+                                <div class="col-6"><a href=""><img src="images/test1.jpg" alt="" width="100%"></a></div>
+                                <div class="col-6"><a href=""><img src="images/test2.jpg" alt="" width="100%"></a></div>
+                                
+                                <!-- Force next columns to break to new line -->
+                                <div class="w-100 p-0"></div>
+                                
+                                <div class="col-6"><a href=""><img src="images/test3.jpg" alt="" width="100%"></a></div>
+                                <div class="col-6"><a href=""><img src="images/test4.jpg" alt="" width="100%"></a></div>
+                                <div class="col-12 see-all"><a href="#">مشاهده همه</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm">
+                        <div class="container text-center">
+                            <div class="row">
+                                <div class="col-12 label"><h3>هدفون هدست و هندزفری</h3></div>
+                                <div class="col-12 note1"><p>بر اساس بازدید های شما</p></div>
+                                <div class="col-6"><a href=""><img src="images/test9.jpg" alt="" width="100%"></a></div>
+                                <div class="col-6"><a href=""><img src="images/test10.jpg" alt="" width="100%"></a></div>
+                                
+                                <!-- Force next columns to break to new line -->
+                                <div class="w-100 p-0"></div>
+                                
+                                <div class="col-6"><a href=""><img src="images/test11.jpg" alt="" width="100%"></a></div>
+                                <div class="col-6"><a href=""><img src="images/test12.jpg" alt="" width="100%"></a></div>
+                                <div class="col-12 see-all"><a href="#">مشاهده همه</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm">
+                        <div class="container text-center">
+                            <div class="row">
+                                <div class="col-12 label"><h3>کیف و کاور گوشی</h3></div>
+                                <div class="col-12 note1"><p>بر اساس بازدید های شما</p></div>
+                                <div class="col-6"><a href=""><img src="images/test5.jpg" alt="" width="100%"></a></div>
+                                <div class="col-6"><a href=""><img src="images/test6.jpg" alt="" width="100%"></a></div>
+                                
+                                <!-- Force next columns to break to new line -->
+                                <div class="w-100 p-0"></div>
+                                
+                                <div class="col-6"><a href=""><img src="images/test7.jpg" alt="" width="100%"></a></div>
+                                <div class="col-6"><a href=""><img src="images/test8.jpg" alt="" width="100%"></a></div>
+                                <div class="col-12 see-all"><a href="#">مشاهده همه</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm">
+                        <div class="container text-center">
+                            <div class="row">
+                                <div class="col-12 label"><h3>ساعت هوشمند</h3></div>
+                                <div class="col-12 note1"><p>بر اساس بازدید های شما</p></div>
+                                <div class="col-6"><a href=""><img src="images/test13.jpg" alt="" width="100%"></a></div>
+                                <div class="col-6"><a href=""><img src="images/test14.jpg" alt="" width="100%"></a></div>
+                                
+                                <!-- Force next columns to break to new line -->
+                                <div class="w-100 p-0"></div>
+                                
+                                <div class="col-6"><a href=""><img src="images/test15.jpg" alt="" width="100%"></a></div>
+                                <div class="col-6"><a href=""><img src="images/test16.jpg" alt="" width="100%"></a></div>
+                                <div class="col-12 see-all"><a href="#">مشاهده همه</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="most-sells container-fluid container-xl">
+                <div class="row most-sells-intro">
+                    <h3>پرفروش ترین محصولات</h3>
+                    <a href="">مشاهده همه</a>
+                </div>
+                <div class="row most-sells-main">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col">
+                                <a href="">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                    <img src="images/test30.jpg" width="100%" alt="">
+                                            </div>
+                                            <div class="col-9">
+                                                <p><span class="most-sells-count">1</span><span class="most-sells-name long-name-text">خودکار پنتر مدل فوق روان نانو باکتریال</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                    <img src="images/test27.jpg" width="100%" alt="">
+                                            </div>
+                                            <div class="col-9">
+                                                <p><span class="most-sells-count">2</span><span class="most-sells-name long-name-text">خودکار پنتر مدل فوق روان نانو باکتریال</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                    <img src="images/test20.jpg" width="100%" alt="">
+                                            </div>
+                                            <div class="col-9">
+                                                <p><span class="most-sells-count">3</span><span class="most-sells-name long-name-text">خودکار پنتر مدل فوق روان نانو باکتریال</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col d-none d-sm-block">
+                                <a href="">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                    <img src="images/test12.jpg" width="100%" alt="">
+                                            </div>
+                                            <div class="col-9">
+                                                <p><span class="most-sells-count">4</span><span class="most-sells-name long-name-text">خودکار پنتر مدل فوق روان نانو باکتریال</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                    <img src="images/test18.jpg" width="100%" alt="">
+                                            </div>
+                                            <div class="col-9">
+                                                <p><span class="most-sells-count">5</span><span class="most-sells-name long-name-text">خودکار پنتر مدل فوق روان نانو باکتریال</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                    <img src="images/test11.jpg" width="100%" alt="">
+                                            </div>
+                                            <div class="col-9">
+                                                <p><span class="most-sells-count">6</span><span class="most-sells-name long-name-text">خودکار پنتر مدل فوق روان نانو باکتریال</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>                            
+                            <div class="col d-none d-sm-block">
+                                <a href="">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                    <img src="images/test6.jpg" width="100%" alt="">
+                                            </div>
+                                            <div class="col-9">
+                                                <p><span class="most-sells-count">7</span><span class="most-sells-name long-name-text">خودکار پنتر مدل فوق روان نانو باکتریال</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                    <img src="images/test3.jpg" width="100%" alt="">
+                                            </div>
+                                            <div class="col-9">
+                                                <p><span class="most-sells-count">8</span><span class="most-sells-name long-name-text">خودکار پنتر مدل فوق روان نانو باکتریال</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                    <img src="images/test13.jpg" width="100%" alt="">
+                                            </div>
+                                            <div class="col-9">
+                                                <p><span class="most-sells-count">9</span><span class="most-sells-name long-name-text">خودکار پنتر مدل فوق روان نانو باکتریال</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col d-none d-md-block">
+                                <a href="">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                    <img src="images/test26.jpg" width="100%" alt="">
+                                            </div>
+                                            <div class="col-9">
+                                                <p><span class="most-sells-count">10</span><span class="most-sells-name long-name-text">خودکار پنتر مدل فوق روان نانو باکتریال</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                    <img src="images/test23.jpg" width="100%" alt="">
+                                            </div>
+                                            <div class="col-9">
+                                                <p><span class="most-sells-count">11</span><span class="most-sells-name long-name-text">خودکار پنتر مدل فوق روان نانو باکتریال</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                    <img src="images/test28.jpg" width="100%" alt="">
+                                            </div>
+                                            <div class="col-9">
+                                                <p><span class="most-sells-count">12</span><span class="most-sells-name long-name-text">خودکار پنتر مدل فوق روان نانو باکتریال</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="products-carousel container-fluid container-xl">
+                <div class="row">
+                    <div class="col-12 col-sm">
+                        <div class="container text-center">
+                            <div class="row">
+                                <div class="col-12 label"><h3>گوشی موبایل</h3></div>
+                                <div class="col-12 note1"><p>بر اساس بازدید های شما</p></div>
+                                
+                                <div class="col-6"><a href=""><img src="images/test33.jpg" alt="" width="100%"></a></div>
+                                <div class="col-6"><a href=""><img src="images/test34.jpg" alt="" width="100%"></a></div>
+                                
+                                <!-- Force next columns to break to new line -->
+                                <div class="w-100 p-0"></div>
+                                
+                                <div class="col-6"><a href=""><img src="images/test35.jpg" alt="" width="100%"></a></div>
+                                <div class="col-6"><a href=""><img src="images/test36.jpg" alt="" width="100%"></a></div>
+                                <div class="col-12 see-all"><a href="#">مشاهده همه</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm">
+                        <div class="container text-center">
+                            <div class="row">
+                                <div class="col-12 label"><h3>هدفون هدست و هندزفری</h3></div>
+                                <div class="col-12 note1"><p>بر اساس بازدید های شما</p></div>
+                                <div class="col-6"><a href=""><img src="images/test37.jpg" alt="" width="100%"></a></div>
+                                <div class="col-6"><a href=""><img src="images/test38.jpg" alt="" width="100%"></a></div>
+                                
+                                <!-- Force next columns to break to new line -->
+                                <div class="w-100 p-0"></div>
+                                
+                                <div class="col-6"><a href=""><img src="images/test39.jpg" alt="" width="100%"></a></div>
+                                <div class="col-6"><a href=""><img src="images/test40.jpg" alt="" width="100%"></a></div>
+                                <div class="col-12 see-all"><a href="#">مشاهده همه</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm">
+                        <div class="container text-center">
+                            <div class="row">
+                                <div class="col-12 label"><h3>کیف و کاور گوشی</h3></div>
+                                <div class="col-12 note1"><p>بر اساس بازدید های شما</p></div>
+                                <div class="col-6"><a href=""><img src="images/test41.jpg" alt="" width="100%"></a></div>
+                                <div class="col-6"><a href=""><img src="images/test42.jpg" alt="" width="100%"></a></div>
+                                
+                                <!-- Force next columns to break to new line -->
+                                <div class="w-100 p-0"></div>
+                                
+                                <div class="col-6"><a href=""><img src="images/test43.jpg" alt="" width="100%"></a></div>
+                                <div class="col-6"><a href=""><img src="images/test44.jpg" alt="" width="100%"></a></div>
+                                <div class="col-12 see-all"><a href="#">مشاهده همه</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm">
+                        <div class="container text-center">
+                            <div class="row">
+                                <div class="col-12 label"><h3>ساعت هوشمند</h3></div>
+                                <div class="col-12 note1"><p>بر اساس بازدید های شما</p></div>
+                                <div class="col-6"><a href=""><img src="images/test45.jpg" alt="" width="100%"></a></div>
+                                <div class="col-6"><a href=""><img src="images/test46.jpg" alt="" width="100%"></a></div>
+                                
+                                <!-- Force next columns to break to new line -->
+                                <div class="w-100 p-0"></div>
+                                
+                                <div class="col-6"><a href=""><img src="images/test47.jpg" alt="" width="100%"></a></div>
+                                <div class="col-6"><a href=""><img src="images/test48.jpg" alt="" width="100%"></a></div>
+                                <div class="col-12 see-all"><a href="#">مشاهده همه</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="best-discount container-fluid container-xl">
+                <div class="row best-discount-label">
+                    <div class="col">
+                        <h3>منتخب محصولات تخفیف و حراج</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col best-discount-item">
+                        <a href="">
+                            <img src="images/test29.jpg" alt="" width="100%">
+                            <label for="">
+                                <p class="price"><span class="discount">22%</span><span>20000</span><span>تومان </span></p>
+                                <p class="price-before-discount"><span>50000</span><span>تومان </span></p>
+                            </label>
+                        </a>
+                    </div>            
+                    <div class="col best-discount-item">
+                        <a href="">
+                            <img src="images/test30.jpg" alt="" width="100%">
+                            <label for="">
+                                <p class="price"><span class="discount">22%</span><span>20000</span><span>تومان </span></p>
+                                <p class="price-before-discount"><span>50000</span><span>تومان </span></p>
+                            </label>
+                        </a>
+                    </div>
+                    <div class="w-100 d-block d-lg-none"></div>            
+                    <div class="col best-discount-item">
+                        <a href="">
+                            <img src="images/test27.jpg" alt="" width="100%">
+                            <label for="">
+                                <p class="price"><span class="discount">22%</span><span>20000</span><span>تومان </span></p>
+                                <p class="price-before-discount"><span>50000</span><span>تومان </span></p>
+                            </label>
+                        </a>
+                    </div>  
+                    <div class="w-100 d-none d-xl-none d-lg-block"></div>          
+                    <div class="col best-discount-item">
+                        <a href="">
+                            <img src="images/test28.jpg" alt="" width="100%">
+                            <label for="">
+                                <p class="price"><span class="discount">22%</span><span>20000</span><span>تومان </span></p>
+                                <p class="price-before-discount"><span>50000</span><span>تومان </span></p>
+                            </label>
+                        </a>
+                    </div>
+                    <div class="w-100 d-block d-lg-none"></div>            
+                    <div class="col best-discount-item">
+                        <a href="">
+                            <img src="images/test25.jpg" alt="" width="100%">
+                            <label for="">
+                                <p class="price"><span class="discount">22%</span><span>20000</span><span>تومان </span></p>
+                                <p class="price-before-discount"><span>50000</span><span>تومان </span></p>
+                            </label>
+                        </a>
+                    </div>            
+                    <div class="col best-discount-item">
+                        <a href="">
+                            <img src="images/test26.jpg" alt="" width="100%">
+                            <label for="">
+                                <p class="price"><span class="discount">22%</span><span>20000</span><span>تومان </span></p>
+                                <p class="price-before-discount"><span>50000</span><span>تومان </span></p>
+                            </label>
+                        </a>
+                    </div>            
+                </div>
+                <div class="row d-none d-md-flex">
+                    <div class="col best-discount-item">
+                        <a href="">
+                            <img src="images/test23.jpg" alt="" width="100%">
+                            <label for="">
+                                <p class="price"><span class="discount">22%</span><span>20000</span><span>تومان </span></p>
+                                <p class="price-before-discount"><span>50000</span><span>تومان </span></p>
+                            </label>
+                        </a>
+                    </div>            
+                    <div class="col best-discount-item">
+                        <a href="">
+                            <img src="images/test24.jpg" alt="" width="100%">
+                            <label for="">
+                                <p class="price"><span class="discount">22%</span><span>20000</span><span>تومان </span></p>
+                                <p class="price-before-discount"><span>50000</span><span>تومان </span></p>
+                            </label>
+                        </a>
+                    </div>
+                    <div class="w-100 d-block d-lg-none"></div>            
+                    <div class="col best-discount-item">
+                        <a href="">
+                            <img src="images/test22.jpg" alt="" width="100%">
+                            <label for="">
+                                <p class="price"><span class="discount">22%</span><span>20000</span><span>تومان </span></p>
+                                <p class="price-before-discount"><span>50000</span><span>تومان </span></p>
+                            </label>
+                        </a>
+                    </div>  
+                    <div class="w-100 d-none d-xl-none d-lg-block"></div>          
+                    <div class="col best-discount-item">
+                        <a href="">
+                            <img src="images/test21.jpg" alt="" width="100%">
+                            <label for="">
+                                <p class="price"><span class="discount">22%</span><span>20000</span><span>تومان </span></p>
+                                <p class="price-before-discount"><span>50000</span><span>تومان </span></p>
+                            </label>
+                        </a>
+                    </div>
+                    <div class="w-100 d-block d-lg-none"></div>            
+                    <div class="col best-discount-item">
+                        <a href="">
+                            <img src="images/test20.jpg" alt="" width="100%">
+                            <label for="">
+                                <p class="price"><span class="discount">22%</span><span>20000</span><span>تومان </span></p>
+                                <p class="price-before-discount"><span>50000</span><span>تومان </span></p>
+                            </label>
+                        </a>
+                    </div>            
+                    <div class="col best-discount-item">
+                        <a href="">
+                            <img src="images/test19.jpg" alt="" width="100%">
+                            <label for="">
+                                <p class="price"><span class="discount">22%</span><span>20000</span><span>تومان </span></p>
+                                <p class="price-before-discount"><span>50000</span><span>تومان </span></p>
+                            </label>
+                        </a>
+                    </div>            
+                </div>
+                <div class="row d-none d-md-flex">
+                    <div class="col best-discount-item">
+                        <a href="">
+                            <img src="images/test12.jpg" alt="" width="100%">
+                            <label for="">
+                                <p class="price"><span class="discount">22%</span><span>20000</span><span>تومان </span></p>
+                                <p class="price-before-discount"><span>50000</span><span>تومان </span></p>
+                            </label>
+                        </a>
+                    </div>            
+                    <div class="col best-discount-item">
+                        <a href="">
+                            <img src="images/test13.jpg" alt="" width="100%">
+                            <label for="">
+                                <p class="price"><span class="discount">22%</span><span>20000</span><span>تومان </span></p>
+                                <p class="price-before-discount"><span>50000</span><span>تومان </span></p>
+                            </label>
+                        </a>
+                    </div>
+                    <div class="w-100 d-block d-lg-none"></div>            
+                    <div class="col best-discount-item">
+                        <a href="">
+                            <img src="images/test14.jpg" alt="" width="100%">
+                            <label for="">
+                                <p class="price"><span class="discount">22%</span><span>20000</span><span>تومان </span></p>
+                                <p class="price-before-discount"><span>50000</span><span>تومان </span></p>
+                            </label>
+                        </a>
+                    </div>  
+                    <div class="w-100 d-none d-xl-none d-lg-block"></div>          
+                    <div class="col best-discount-item">
+                        <a href="">
+                            <img src="images/test15.jpg" alt="" width="100%">
+                            <label for="">
+                                <p class="price"><span class="discount">22%</span><span>20000</span><span>تومان </span></p>
+                                <p class="price-before-discount"><span>50000</span><span>تومان </span></p>
+                            </label>
+                        </a>
+                    </div>
+                    <div class="w-100 d-block d-lg-none"></div>            
+                    <div class="col best-discount-item">
+                        <a href="">
+                            <img src="images/test16.jpg" alt="" width="100%">
+                            <label for="">
+                                <p class="price"><span class="discount">22%</span><span>20000</span><span>تومان </span></p>
+                                <p class="price-before-discount"><span>50000</span><span>تومان </span></p>
+                            </label>
+                        </a>
+                    </div>            
+                    <div class="col best-discount-item">
+                        <a href="">
+                            <img src="images/test4.jpg" alt="" width="100%">
+                            <label for="">
+                                <p class="price"><span class="discount">22%</span><span>20000</span><span>تومان </span></p>
+                                <p class="price-before-discount"><span>50000</span><span>تومان </span></p>
+                            </label>
+                        </a>
+                    </div>            
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footer-container" class="container-fluid">
+            <div class="footer-intro container-fluid">
+                <div class="back-top">
+                    <button type="button" class="btn btn-light" onclick="winBacktoTop()">بازگشت به بالا <i class="fa fa-angle-up" style="font-size:20px"></i></button>
+                </div>
+                <div class="row">
+                    <div class="col-xl-1 col-lg-2 col-md-3 col-sm-3 col-3">
+                        <img src="images/logo.png" alt="logo" width="100%">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="support-num"><p>تلفن پشتیبانی 09377372231</p></div>
+                        <div class="support-about"><p>۷ روز هفته، ۲۴ ساعته پاسخگوی شما هستیم</p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-services d-sm-block d-none">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col">
+                            <a href=""><img src="images/original.png" alt="original"><label for="">ضمانت اصل بودن کالا</label></a>
+                        </div>
+                        <div class="col">
+                            <a href=""><img src="images/7days.png" alt="7days"><label for="">هفت روز ضمانت بازگشت</label></a>
+                        </div>
+                        <div class="col">
+                            <a href=""><img src="images/24hours.png" alt="24hours"><label for="">هفت روز هفته ، 24 ساعته</label></a>
+                        </div>
+                        <div class="col">
+                            <a href=""><img src="images/pay in location.png" alt="pay"><label for="">امکان پرداخت در محل</label></a>
+                        </div>
+                        <div class="col">
+                            <a href=""><img src="images/express delivery.png" alt="express"><label for="">امکان تحویل اکسپرس</label></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="other-pages container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <ul>
+                            <li><h3>با دیجی کالا</h3></li>
+                            <li>
+                                <a href="">عنوان صفحه شما</a>
+                            </li>
+                            <li>
+                                <a href="">عنوان صفحه شما</a>
+                            </li>
+                            <li>
+                                <a href="">عنوان صفحه شما</a>
+                            </li>
+                            <li>
+                                <a href="">عنوان صفحه شما</a>
+                            </li>
+                            <li>
+                                <a href="">عنوان صفحه شما</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul>
+                            <li><h3>خدمات مشتریان</h3></li>
+                            <li>
+                                <a href="">عنوان صفحه شما</a>
+                            </li>
+                            <li>
+                                <a href="">عنوان صفحه شما</a>
+                            </li>
+                            <li>
+                                <a href="">عنوان صفحه شما</a>
+                            </li>
+                            <li>
+                                <a href="">عنوان صفحه شما</a>
+                            </li>
+                            <li>
+                                <a href="">عنوان صفحه شما</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="w-100 d-md-none d-block"></div>
+                    <div class="col d-none d-md-block">
+                        <ul>
+                            <li><h3>راهنمای خرید از دیجی کالا</h3></li>
+                            <li>
+                                <a href="">عنوان صفحه شما</a>
+                            </li>
+                            <li>
+                                <a href="">عنوان صفحه شما</a>
+                            </li>
+                            <li>
+                                <a href="">عنوان صفحه شما</a>
+                            </li>
+                            <li>
+                                <a href="">عنوان صفحه شما</a>
+                            </li>
+                            <li>
+                                <a href="">عنوان صفحه شما</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact col">
+                        <div class="row">
+                            <h3>همراه ما باشید !</h3>
+                        </div>
+                        <div>
+                            <div>
+                                <i class="fa fa-phone-square" style="font-size:30px"></i>
+                            </div>
+                            <div>
+                                <i class="fa fa-twitter-square" style="font-size:30px"></i>
+                            </div>
+                            <div>
+                                <i class="fa fa-linkedin-square" style="font-size:30px"></i>
+                            </div>
+                            <div>
+                                <i class="fa fa-facebook-square" style="font-size:30px"></i>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <p>با ثبت ایمیل از جدیدترین تخفیف ها باخبر شوید !</p>
+                        </div>
+                        <div>
+                            <form action="">
+                                <input type="email">
+                                <button type="button">ثبت</button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="app-download">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-xl">
+                            <img src="images/footerlogo2.png" alt="" width="44px">
+                            <h2>دانلود اپلیکیشن دیجیکالا</h2>
+                        </div>
+                        <div class="col-12 col-xl">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col d-xl-block d-none"></div>
+                                    <div class="col">
+                                        <a href="">
+                                            <img src="images/google play app.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="">
+                                            <img src="images/bazar app.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="">
+                                            <img src="images/siib app.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="col-1 d-none d-xl-block">
+                                        <a href="">
+                                            <img src="images/more app.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <hr class="d-block d-xl-none">
+                                    <div class="app-more w-100 d-xl-none d-block"><a class="w-50" href="">بیشتر ببینید...</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-about container-fluid">
+                <div class="row">
+                    <div class="col-12 col-xl container-fluid">
+                        <div class="row">
+                            <div class="col-12"><h2>فروشگاه اینترنتی دیجیکالا ، بررسی ،انتخاب و خرید آنلاین</h2></div>
+                            <div class="col-12"><p>یک خرید اینترنتی مطمئن، نیازمند فروشگاهی است که بتواند کالاهایی متنوع، باکیفیت و دارای قیمت مناسب را در مدت زمانی کوتاه به دست مشتریان خود برساند و ضمانت بازگشت کالا هم داشته باشد؛ ویژگی‌هایی که فروشگاه اینترنتی دیجی‌کالا سال‌هاست بر روی آن‌ها کار کرده و توانسته از این طریق مشتریان ثابت خود را داشته باشد.</p></div>
+                            <div class="col-12"><a href=""><span>مشاهده بیشتر </span><i class="fa fa-chevron-left" style="font-size:13px"></i></a></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col d-xl-block d-none"></div>
+                                <div class="col d-xl-block d-none"></div>
+                                <div class="col col-xl">
+                                    <a href="">
+                                        <img src="images/logo-etemad.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="col col-xl">
+                                    <a href="">
+                                        <img src="images/kasbokar.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="col col-xl">
+                                    <a href="">
+                                        <img src="images/rezi.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <h4>برای استفاده از مطالب دیجی‌کالا، داشتن «هدف غیرتجاری» و ذکر «منبع» کافیست. تمام حقوق اين وب‌سايت نیز برای شرکت نوآوران فن آوازه (فروشگاه آنلاین دیجی‌کالا) است.</h3>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>    
+        var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 10,
+        spaceBetween: 0,
+        navigation: {
+            nextEl: '.my-custom-next',
+            prevEl: '.my-custom-prev',
+        },
+        loop: false,
+    });
+    </script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
